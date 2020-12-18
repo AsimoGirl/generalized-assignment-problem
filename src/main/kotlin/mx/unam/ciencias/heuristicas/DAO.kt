@@ -15,7 +15,7 @@ import java.sql.Statement
  */
 class DAO() {
     /** URL donde se encuentra la base de datos a usar*/
-    private val DB_URL = "jdbc:sqlite:resources/gap.db"
+    private val DB_URL = "jdbc:sqlite:resources/gap2.db"
 
     /**
      * Función que obtiene la información de todas los trabajadores
