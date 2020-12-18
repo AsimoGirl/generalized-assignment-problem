@@ -17,6 +17,7 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
     val asignacionesTotales = numTrabajadores * numTareas
     val tablaCapacidades =  creaTablaCapacidades()
     val tablaCostos = creaTablaCostos()
+    val capacidadTotal = calculaCapacidadTotal()
 
     private fun creaTablaCapacidades():Array<DoubleArray>{
         val tablaCapacidades = Array(numTrabajadores) { DoubleArray(numTareas) }
@@ -48,7 +49,10 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
             var idTrabajador = asignaciones[i]
             costoTotal += tablaCostos[idTrabajador-1][idTarea-1]
         }
-        return costoTotal
+        if (esFactible(asignaciones)) {
+            return costoTotal
+        }
+            return costoTotal * 10000
     }
 
     fun revisaCapacidad(id_trabajador: Int, asignaciones: ArrayList<Int>): Boolean {
@@ -72,5 +76,13 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
             }
         }
         return true
+    }
+
+    fun calculaCapacidadTotal(): Double{
+        var capacidadTotal = 0.0
+        for (trabajador in trabajadores){
+            capacidadTotal += trabajador.capacidad
+        }
+        return capacidadTotal
     }
 }
