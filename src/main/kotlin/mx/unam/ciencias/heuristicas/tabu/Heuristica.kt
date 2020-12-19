@@ -178,7 +178,7 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
      * Función que regresa el string de la ruta de la mejor solución del sistema
      * @return La lista de ids de la mejor solución del sistema
      */
-    fun asignacion(): ArrayList<Int> = mejorSolucionActual.asignaciones
+    fun asignacion(): Array<Int> = mejorSolucionActual.asignaciones
 
     /**
      * Función que regresa el string de la ruta de la mejor solución del sistema

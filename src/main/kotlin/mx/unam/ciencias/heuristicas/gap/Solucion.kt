@@ -12,7 +12,7 @@ import kotlin.collections.ArrayList
  * @property asignaciones
  * @constructor Crea una solución
  */
-class Solucion(val grafica: Grafica, var asignaciones: ArrayList<Int>, private val random: Random) {
+class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val random: Random) {
     val trabajadores = grafica.trabajadores
     val tareas = grafica.tareas
     val capacidadTotal = grafica.capacidadTotal
@@ -47,11 +47,11 @@ class Solucion(val grafica: Grafica, var asignaciones: ArrayList<Int>, private v
      */
     override fun toString(): String {
         var solucion = ""
-        for(i in 0 until asignaciones.size){
+        for(i in asignaciones.indices){
             var tarea = tareas.find{it.id == i+1}
-            var trabajador = trabajadores.find{it.id == asignaciones[i]}
+            var trabajador = trabajadores.find{it.id == asignaciones[i] + 1}
             solucion +=
-                "Tarea:" +  tarea!!.nombre + " -> Trabajador:" + trabajador!!.nombre + "\n"
+                "Tarea:" +  tarea!!.id + " -> Trabajador:" + trabajador!!.id + "\n"
         }
         return solucion
     }

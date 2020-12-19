@@ -19,6 +19,7 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
     val tablaCapacidades =  creaTablaCapacidades()
     val tablaCostos = creaTablaCostos()
     val capacidadTotal = calculaCapacidadTotal()
+    val tablaTrabajadoresCap = creaTablaTrabajadoresCap()
 
     private fun creaTablaCapacidades():Array<DoubleArray>{
         val tablaCapacidades = Array(numTrabajadores) { DoubleArray(numTareas) }
@@ -31,6 +32,13 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
         return tablaCapacidades
     }
 
+    private fun creaTablaTrabajadoresCap():Array<Double>{
+        val tablaTrabajadoresCap = Array(numTrabajadores){0.0}
+        for (i in 0 until numTrabajadores){
+            tablaTrabajadoresCap[i] = trabajadores[i].capacidad
+        }
+        return tablaTrabajadoresCap
+    }
     private fun creaTablaCostos():Array<DoubleArray>{
         val tablaCostos = Array(numTrabajadores) { DoubleArray(numTareas) }
         val costos = DAO().getCostos()
@@ -42,12 +50,11 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
         return tablaCostos
     }
 
-    fun calculaCosto(asignaciones: ArrayList<Int>):Double{
+    fun calculaCosto(asignaciones: Array<Int>):Double{
         var costoTotal = 0.0
-        for (i in 0 until asignaciones.size){
-            var idTarea = i + 1
-            var idTrabajador = asignaciones[i]
-            var costoAux= tablaCostos[idTrabajador-1][idTarea-1]
+        for (idTarea in asignaciones.indices){
+            var idTrabajador = asignaciones[idTarea]
+            var costoAux= tablaCostos[idTrabajador][idTarea]
             costoTotal += costoAux
         }
         if (esFactible(asignaciones)) {
@@ -56,38 +63,21 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
             return costoTotal * 10000
     }
 
-    fun calculaMejorTrabajador(id_tarea:Int): ArrayList<Pair<Int, Int>>{
-        val mejoresTrabajadoresIds = ArrayList<Pair<Int, Int>>()
-        val mejoresTrabajadores = ArrayList<Pair<Pair<Int, Int>, Double>>()
-        for(i in 0 until numTrabajadores){
-            var idTrabajador = i
-            var valorCosto = tablaCostos[idTrabajador][id_tarea]
-            var ids = Pair(idTrabajador, id_tarea)
-            var par = Pair(ids, valorCosto)
-            mejoresTrabajadores[i] = par
-        }
-        mejoresTrabajadores.sortedWith(compareBy({ it.second }, { it.second }))
-        for(i in 0 until mejoresTrabajadores.size){
-            mejoresTrabajadoresIds[i] = mejoresTrabajadores[i].first
-        }
-        return mejoresTrabajadoresIds
-    }
 
-    fun revisaCapacidad(id_trabajador: Int, asignaciones: ArrayList<Int>): Boolean {
+    fun revisaCapacidad(id_trabajador: Int, asignaciones: Array<Int>): Boolean {
         var capacidad = 0.0
-        for(i in 0 until asignaciones.size) {
+        for(i in asignaciones.indices) {
             if(asignaciones[i] == id_trabajador) {
-                capacidad += tablaCapacidades[id_trabajador - 1][i]
+                capacidad += tablaCapacidades[id_trabajador][i]
             }
         }
-        val trabajador = trabajadores.find{it.id == id_trabajador}
-        val capacidadTrabajador = trabajador!!.capacidad
+        val capacidadTrabajador = tablaTrabajadoresCap[id_trabajador]
         return capacidad <= capacidadTrabajador
     }
 
-    fun esFactible(asignaciones: ArrayList<Int>): Boolean{
-        for(i in 0 until asignaciones.size){
-            var idTrabajador = asignaciones[i]
+    fun esFactible(asignaciones: Array<Int>): Boolean{
+        for(element in asignaciones){
+            var idTrabajador = element
             //Revisamos que el trabajador no supere su capacidad
             if (!revisaCapacidad(idTrabajador, asignaciones)){
                 return false
@@ -104,23 +94,40 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
         return capacidadTotal
     }
 
-    fun generaAsignacionInicial(): ArrayList<Int>{
-        val asignacionInicial = ArrayList<Int>()
+    fun generaAsignacionInicial(): Array<Int>{
+        val asignacionInicial = Array<Int>(numTareas){0}
         var esAdmisible = false
-        val tareasIds = ArrayList<Int>()
-        for(i in 0 until numTareas){
-            tareasIds[i] = i
-        }
+        val tareasIds = Array(numTareas){it}
         for(i in 0 until 100){
+            esAdmisible = true
+            var caps = Array(numTrabajadores){0.0}
             tareasIds.shuffle(Random(42))
-            for(i in 0 until numTareas){
-                var idTarea = tareasIds[i]
-                var candidatos = calculaMejorTrabajador(idTarea)
+            for(tarea in tareasIds){
+                var minTarea = capacidadTotal
+                var minTrabajador = -1
+                for(i in 0 until numTrabajadores){
+                    if (caps[i] + tablaCapacidades[i][tarea] <= tablaTrabajadoresCap[i]){
+                        if(tablaCapacidades[i][tarea] < minTarea){
+                            minTarea = tablaCapacidades[i][tarea]
+                            minTrabajador = i
+                        }
+                    }
+                }
+                if (minTrabajador == -1){
+                    esAdmisible = false
+                    break
+                }
+                else{
+                    asignacionInicial[tarea] = minTrabajador
+                    caps[minTrabajador] = caps[minTrabajador] + minTarea
+                }
             }
+            if (esAdmisible)
+                break
         }
         if(!esAdmisible){
             for(i in 0 until numTareas){
-                asignacionInicial[i] = (0 until trabajadores.size).random()
+                asignacionInicial[i] = (0 until numTrabajadores).random()
             }
         }
         return asignacionInicial
