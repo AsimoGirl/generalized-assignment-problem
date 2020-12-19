@@ -25,11 +25,11 @@ fun main(args: Array<String>) {
     var mejorAsignacion = ""
     for (i in seedS until seedF + 1)  {
         println("Semilla: $i")
-        val asignacionActual = arrayListOf<Int>()
-        val solucion1 = Solucion(graf1, asignacionActual, Random(i))
-        val solucionInicial = solucion1.generaSolucionInicial()
+        val asignacionActual = graf1.generaAsignacionInicial()
+        val solucionInicial = Solucion(graf1, asignacionActual, Random(i))
         val gap = Heuristica(graf1, solucionInicial)
-        gap.tabu()
+        //Heuristica
+        gap.aceptacionPorUmbrales()
         if (gap.evaluacion() <= mejorCosto){
             mejorCosto = gap.evaluacion()
             mejorSemilla = i

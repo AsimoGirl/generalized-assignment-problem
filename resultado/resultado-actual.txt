@@ -1,0 +1,203 @@
+Soluciones de las distintas semillas en el rango
+Semilla: 10, Costo: 1.6907377776220453E8
+Semilla: 11, Costo: 1.6893277404964074E8
+Mejor Semilla: 11, Mejor Costo: 1.6893277404964074E8 , Mejor Ruta: Tarea:editar el sillón -> Trabajador:Gabriel Garcia
+Tarea:olfatear el departamento -> Trabajador:Ángel Smith
+Tarea:actuar el auto -> Trabajador:María De Jesús Blanco
+Tarea:escribir la ventana -> Trabajador:Enrique Muñoz
+Tarea:mover el cuaderno -> Trabajador:Andrea Garrido
+Tarea:toquetear el gobierno -> Trabajador:María De Guadalupe Sanz
+Tarea:bailar el piso -> Trabajador:Patricia Alonso
+Tarea:darse cuenta de la pared -> Trabajador:Roberto Hall
+Tarea:saber el zoológico -> Trabajador:Santiago Martinez
+Tarea:observar la escuela -> Trabajador:Jaime Gonzalez
+Tarea:probar el templo -> Trabajador:Luis Ángel Santos
+Tarea:tener en cuenta el pantalón -> Trabajador:Antonio Garcia
+Tarea:dibujar el teatro -> Trabajador:María Elena Lopez
+Tarea:arreglar la nube -> Trabajador:Juan Perez
+Tarea:describir el edificio -> Trabajador:Alejandro Hernandez
+Tarea:prometer los guantes -> Trabajador:Araceli Romero
+Tarea:escribir la pradera -> Trabajador:Miguel Rivera
+Tarea:dibujar el anillo -> Trabajador:Yolanda Wilson
+Tarea:querer la oficina -> Trabajador:María De Guadalupe Ortega
+Tarea:completar la letra -> Trabajador:Gabriel Torres
+Tarea:saber la lluvia -> Trabajador:Jaime Gonzalez
+Tarea:desear el lápiz -> Trabajador:José Guadalupe Lozano
+Tarea:roer el calor -> Trabajador:Ruben Gomez
+Tarea:beber la música -> Trabajador:Rosa María Cano
+Tarea:escurrir el ojo -> Trabajador:Isabel Morales
+Tarea:contestar la nieve -> Trabajador:Ruben Gonzalez
+Tarea:escurrir la radio -> Trabajador:Salvador Smith
+Tarea:actuar el agua -> Trabajador:Armando Rivera
+Tarea:oir el sillón -> Trabajador:José Guadalupe Vazquez
+Tarea:entrenar el ave -> Trabajador:Roberto Hall
+Tarea:salir el teclado -> Trabajador:María Teresa Guerrero
+Tarea:deshuesar el bolígrafo -> Trabajador:Enrique Muñoz
+Tarea:cerrar el reloj -> Trabajador:María Del Rosario Rubio
+Tarea:tener el petróleo -> Trabajador:María Johnson
+Tarea:mover el cinturón -> Trabajador:Isabel Morales
+Tarea:ver la persiana -> Trabajador:Juan Manuel Alvarez
+Tarea:jalar la nube -> Trabajador:María De Jesús Moreno
+Tarea:tomar el árbol -> Trabajador:Luis Ángel Taylor
+Tarea:editar la herramienta -> Trabajador:Ruben Gonzalez
+Tarea:darse cuenta de la bomba -> Trabajador:Salvador Smith
+Tarea:silbar el mono -> Trabajador:Ángel Smith
+Tarea:voltear la habitación -> Trabajador:Isabel Brown
+Tarea:explotar el cuadro -> Trabajador:Martín Garrido
+Tarea:reconocer el zoológico -> Trabajador:José De Jesús Rodriguez
+Tarea:escuchar el gobierno -> Trabajador:Eduardo Lozano
+Tarea:silbar la mesada -> Trabajador:Luis Ángel Taylor
+Tarea:mover el cohete -> Trabajador:Martín Clark
+Tarea:deshuesar el debate -> Trabajador:Araceli Romero
+Tarea:escuchar el piso -> Trabajador:María Isabel Nelson
+Tarea:destazar el refugio -> Trabajador:Ana María Scott
+Tarea:mover la tecla -> Trabajador:Andrea Garrido
+Tarea:comer el moño -> Trabajador:Isabel Johnson
+Tarea:imitar la muela -> Trabajador:Verónica Castillo
+Tarea:dormir la casa -> Trabajador:Martín Lozano
+Tarea:entrelazar la letra -> Trabajador:Santiago Martinez
+Tarea:notar la escuela -> Trabajador:Gabriel Torres
+Tarea:romper la estadística -> Trabajador:María Teresa Guerrero
+Tarea:hacer la tecla -> Trabajador:María Isabel Nelson
+Tarea:desmembrar la pistola -> Trabajador:María De Guadalupe Sanz
+Tarea:roer el piso -> Trabajador:Martín Garrido
+Tarea:resolver el hierro -> Trabajador:Luis Ángel Taylor
+Tarea:entender la embarcación -> Trabajador:Martín Clark
+Tarea:desear el cuaderno -> Trabajador:Martín Clark
+Tarea:gritar el discurso -> Trabajador:Isabel Morales
+Tarea:entrar el departamento -> Trabajador:María Johnson
+Tarea:ganar el hierro -> Trabajador:Arturo Delgado
+Tarea:comprender el deporte -> Trabajador:Enrique Muñoz
+Tarea:observar el edificio -> Trabajador:Roberto Hall
+Tarea:entrar el chocolate -> Trabajador:María Johnson
+Tarea:devorar la mano -> Trabajador:Isabel Morales
+Tarea:degustar la universidad -> Trabajador:María Del Carmen Hall
+Tarea:bailar el desodorante -> Trabajador:Martín Garrido
+Tarea:salir la escuela -> Trabajador:María De Jesús Blanco
+Tarea:roer la mano -> Trabajador:José Lopez
+Tarea:ganar el petróleo -> Trabajador:Gabriel Garcia
+Tarea:aprovar el departamento -> Trabajador:María De Guadalupe Sanz
+Tarea:escurrir la librería -> Trabajador:María Johnson
+Tarea:saltar el monitor -> Trabajador:Jaime Gonzalez
+Tarea:desear el proyector -> Trabajador:Gustavo Torres
+Tarea:responder el monitor -> Trabajador:Eduardo Lozano
+Tarea:recordar la navaja -> Trabajador:María Luisa Ruiz
+Tarea:oler el martillo -> Trabajador:Martín Garrido
+Tarea:mecer la música -> Trabajador:José De Jesús Diaz
+Tarea:jalar la rueda -> Trabajador:Roberto Hall
+Tarea:jalar el zapato -> Trabajador:Isabel Morales
+Tarea:quemar la persona -> Trabajador:Pedro Castro
+Tarea:imitar la bala -> Trabajador:Enrique Walker
+Tarea:disolver la muela -> Trabajador:María Del Rosario Rubio
+Tarea:entrenar el plato -> Trabajador:Guadalupe Muñoz
+Tarea:comprar el abuelo -> Trabajador:María Del Carmen Hall
+Tarea:bailar el discurso -> Trabajador:Arturo Delgado
+Tarea:arreglar la agujeta -> Trabajador:Salvador Smith
+Tarea:contestar el mensaje -> Trabajador:Marco Antonio Rodriguez
+Tarea:roer el sillón -> Trabajador:Rosa María Cano
+Tarea:comprar la explosión -> Trabajador:Ángel Smith
+Tarea:destazar la felicidad -> Trabajador:Miguel Ángel Carter
+Tarea:tomar las lentejas -> Trabajador:Gabriel Garcia
+Tarea:planear la impresora -> Trabajador:José De Jesús Rodriguez
+Tarea:cantar el desodorante -> Trabajador:Roberto Hall
+Tarea:gritar el castillo -> Trabajador:Luis Ángel Walker
+Tarea:oir la crema -> Trabajador:Martín Lozano
+Tarea:mecer el televisor -> Trabajador:Ruben Martinez
+Tarea:oler el mapa -> Trabajador:Gustavo Torres
+Tarea:entrelazar las hojas -> Trabajador:Luis Ángel Taylor
+Tarea:saber la librería -> Trabajador:Jorge Jesús Miller
+Tarea:escuchar la tecla -> Trabajador:Martín Allen
+Tarea:comer los auriculares -> Trabajador:Alejandro Hernandez
+Tarea:silbar la pared -> Trabajador:Juan Manuel Alvarez
+Tarea:impartir el bolígrafo -> Trabajador:Jaime Gonzalez
+Tarea:entrelazar la silla -> Trabajador:Gabriel Garcia
+Tarea:degustar la planta -> Trabajador:Juan Perez
+Tarea:darse cuenta de el hierro -> Trabajador:Ruben Ramirez
+Tarea:estudiar la agujeta -> Trabajador:Salvador Smith
+Tarea:tomar el diente -> Trabajador:José De Jesús Rodriguez
+Tarea:roer la librería -> Trabajador:Enrique Moreno
+Tarea:ganar la felicidad -> Trabajador:Ana María Miller
+Tarea:pintar el diente -> Trabajador:Pedro Castro
+Tarea:resolver la mano -> Trabajador:María Isabel Green
+Tarea:dormir la servilleta -> Trabajador:Santiago Martinez
+Tarea:aprender la corbata -> Trabajador:Juan Perez
+Tarea:cerrar la lapicera -> Trabajador:María De Jesús Blanco
+Tarea:impartir el petróleo -> Trabajador:Ruben Martinez
+Tarea:sentir la humedad -> Trabajador:Martín Allen
+Tarea:voltear la música -> Trabajador:Martín Garrido
+Tarea:saber la embarcación -> Trabajador:Alejandro Hernandez
+Tarea:entender el cohete -> Trabajador:Isabel Brown
+Tarea:oir la ventana -> Trabajador:Ruben Ramirez
+Tarea:entender la lapicera -> Trabajador:Ana María Scott
+Tarea:entrar el refugio -> Trabajador:Andrea Garrido
+Tarea:saltar los libros -> Trabajador:María Isabel Green
+Tarea:salir la pared -> Trabajador:María De Guadalupe Ortega
+Tarea:cortar la fiesta -> Trabajador:Gabriel Garcia
+Tarea:destazar la mano -> Trabajador:José Guadalupe Castro
+Tarea:romper el ave -> Trabajador:Miguel Rivera
+Tarea:entrever el televisor -> Trabajador:Sergio Thomas
+Tarea:romper la radio -> Trabajador:José Guadalupe Vazquez
+Tarea:tocar el metal -> Trabajador:Rosa María Cano
+Tarea:colorear la navaja -> Trabajador:Luis Ángel Taylor
+Tarea:mover la embarcación -> Trabajador:Armando Muñoz
+Tarea:subir las montañas -> Trabajador:Salvador Jackson
+Tarea:planear la lluvia -> Trabajador:Yolanda Wilson
+Tarea:probar el celular -> Trabajador:Santiago Martinez
+Tarea:probar el chocolate -> Trabajador:Isabel Brown
+Tarea:darse cuenta de las luces -> Trabajador:Pablo Castillo
+Tarea:eneseñar la persiana -> Trabajador:Juan Perez
+Tarea:entrar el maletín -> Trabajador:Isabel Morales
+Tarea:mecer el abuelo -> Trabajador:Isabel Diaz
+Tarea:romper la bala -> Trabajador:José De Jesús Diaz
+Tarea:estudiar los caramelos -> Trabajador:Enrique Muñoz
+Tarea:dibujar el sillón -> Trabajador:Guillermo Sanz
+Tarea:probar la presidencia -> Trabajador:María Luisa Ruiz
+Tarea:observar la mesada -> Trabajador:María De Guadalupe Ortega
+Tarea:hacer el candado -> Trabajador:Martín Lozano
+Tarea:oler el palo -> Trabajador:Martín Lozano
+Tarea:tener en cuenta la cama -> Trabajador:María Teresa Guerrero
+Tarea:cortar el calor -> Trabajador:Juan Perez
+Tarea:deshuesar el pantalón -> Trabajador:Rosa María Cano
+Tarea:disolver el teclado -> Trabajador:Irma Anderson
+Tarea:cortar la rueda -> Trabajador:José De Jesús Diaz
+Tarea:devorar la abuela -> Trabajador:Marco Antonio Rodriguez
+Tarea:responder el templo -> Trabajador:Enrique Moreno
+Tarea:elegir la planta -> Trabajador:Pablo Castillo
+Tarea:recordar el agua -> Trabajador:Luis Ángel Taylor
+Tarea:comer el piso -> Trabajador:José De Jesús Rodriguez
+Tarea:mecer la herramienta -> Trabajador:Ana María Scott
+Tarea:silbar el anillo -> Trabajador:Martín Clark
+Tarea:amar la escuela -> Trabajador:Martín Clark
+Tarea:estudiar el hipopótamo -> Trabajador:María De Guadalupe Ortega
+Tarea:darse cuenta de las lentejas -> Trabajador:María De Guadalupe Ortega
+Tarea:subir el bolígrafo -> Trabajador:María Del Carmen Hall
+Tarea:prometer el pelo -> Trabajador:Gabriel Torres
+Tarea:mover el granizo -> Trabajador:Jaime Gonzalez
+Tarea:escuchar el abuelo -> Trabajador:Pablo Castillo
+Tarea:querer la crema -> Trabajador:Ángel Smith
+Tarea:entender la cama -> Trabajador:Andrea Garrido
+Tarea:recordar la botella -> Trabajador:Ruben Gomez
+Tarea:inventar la letra -> Trabajador:María Johnson
+Tarea:leer el cohete -> Trabajador:María De Jesús Moreno
+Tarea:beber el planeta -> Trabajador:María De Guadalupe Sanz
+Tarea:escribir la librería -> Trabajador:Enrique Walker
+Tarea:mover la bala -> Trabajador:María Isabel Nelson
+Tarea:prometer la ventana -> Trabajador:María Del Carmen Hall
+Tarea:subir la abuela -> Trabajador:María De Guadalupe Sanz
+Tarea:eneseñar el sol -> Trabajador:Ángel Smith
+Tarea:observar el celular -> Trabajador:Gabriel Torres
+Tarea:voltear el ojo -> Trabajador:José Guadalupe Lozano
+Tarea:sentir el plato -> Trabajador:María De Jesús Blanco
+Tarea:destazar la ensalada -> Trabajador:Guadalupe Muñoz
+Tarea:arreglar la fotografía -> Trabajador:Andrea Garrido
+Tarea:rayar la lapicera -> Trabajador:Irma Anderson
+Tarea:reconocer el petróleo -> Trabajador:Pedro Castro
+Tarea:comprender el edificio -> Trabajador:María Johnson
+Tarea:entrever la lámpara -> Trabajador:Roberto Hall
+Tarea:sabotear el metal -> Trabajador:José Guadalupe Lozano
+Tarea:leer el aluminio -> Trabajador:Santiago Martinez
+Tarea:desear la escuela -> Trabajador:José De Jesús Rodriguez
+Tarea:sentir el partido -> Trabajador:José Lopez
+Tarea:subir la luz -> Trabajador:José Lopez
+Tarea:olvidar la carne -> Trabajador:Irma Anderson
+Tarea:oir la lapicera -> Trabajador:Enrique Muñoz
