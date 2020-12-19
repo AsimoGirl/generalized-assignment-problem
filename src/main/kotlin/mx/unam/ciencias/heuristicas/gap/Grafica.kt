@@ -98,7 +98,7 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
         val asignacionInicial = Array<Int>(numTareas){0}
         var esAdmisible = false
         val tareasIds = Array(numTareas){it}
-        for(i in 0 until 100){
+        for(i in 0 until 1000){
             esAdmisible = true
             var caps = Array(numTrabajadores){0.0}
             tareasIds.shuffle(Random(42))

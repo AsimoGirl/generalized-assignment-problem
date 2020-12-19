@@ -15,9 +15,9 @@ import kotlin.collections.ArrayList
 class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val random: Random) {
     val trabajadores = grafica.trabajadores
     val tareas = grafica.tareas
-    val capacidadTotal = grafica.capacidadTotal
+    //val capacidadTotal = grafica.capacidadTotal
     val factible = grafica.esFactible(asignaciones)
-
+    val costo = grafica.calculaCosto(asignaciones)
 
     /**
      * Función que obtiene el vecino de una solución, intercambiamos las tareas de dos trabajadores
@@ -35,10 +35,6 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
         vecino[tareaAleatoria1] = idTrabajador2
         vecino[tareaAleatoria2] = idTrabajador1
         return Solucion(grafica, vecino, random)
-    }
-
-    fun getCosto(): Double{
-        return grafica.calculaCosto(asignaciones)
     }
 
     /**

@@ -17,8 +17,6 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
     private var solucionActual = solucionInicial
     /** Variable que irá guardando la mejor solución del sistema */
     private var mejorSolucionActual: Solucion = solucionInicial
-
-
     /** Epsilon usada en la heurística de aceptación por umbrales */
     private val epsilon = 0.00001
     /** Epsilon usada en el algoritmo de obtención de la temperatura inicial */
@@ -49,16 +47,16 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
             //Se obtiene un vecino aleatorio de la solución
             val vecino = solucionActual.generaVecinoSwap()
             val rutaActual = solucionActual.asignaciones
-            val costoAntiguo = solucionActual.getCosto()
+            val costoAntiguo = solucionActual.costo
             //Para optimizar la forma de obtener el costo del vecino, llamamos a costoOptimizado
-            val nuevoCosto = vecino.getCosto()
+            val nuevoCosto = vecino.costo
             val nuevaAsignacion = vecino.asignaciones
             //Actualizamos la mejor solución aceptada en caso que el costo del vecino sea mejor
             if (nuevoCosto <= costoAntiguo + T) {
                 solucionActual = vecino
-                val costoMinimo = mejorSolucionActual.getCosto()
+                val costoMinimo = mejorSolucionActual.costo
                 if(nuevoCosto <= costoMinimo){
-                    mejorSolucionActual = vecino
+                    mejorSolucionActual.asignaciones = nuevaAsignacion
                 }
                 c++
                 r += nuevoCosto
@@ -82,7 +80,7 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
             while (p <= q && q >= epsilon) {
                 q = p
                 p = calculaLote(T)
-                println("E: ${mejorSolucionActual.getCosto()}")
+                println("E: ${mejorSolucionActual.costo}")
             }
             //Se disminuye la temperatura multiplicándola con el factor de enfriamiento
             T *= phi
@@ -136,10 +134,10 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
         for (i in 0 until vecinosAceptados) {
             val vecino = actual.generaVecinoSwap()
             val nuevaSolucion = vecino.asignaciones
-            costoActual = solucionActual.getCosto()
-            newCost = vecino.getCosto()
+            costoActual = solucionActual.costo
+            newCost = vecino.costo
             if (newCost <= costoActual + T) {
-                actual = vecino
+                actual.asignaciones = nuevaSolucion
                 c++
             }
         }
@@ -190,7 +188,7 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
      * Función que regresa el costo de la mejor solución del sistema
      * @return El costo de la mejor solución del sistema
      */
-    fun evaluacion(): Double = mejorSolucionActual.getCosto()
+    fun evaluacion(): Double = mejorSolucionActual.costo
 
     /**
      * Función que regresa si la mejor solución del sistema es factible o no

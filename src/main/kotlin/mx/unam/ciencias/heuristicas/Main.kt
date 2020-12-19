@@ -35,7 +35,7 @@ fun main(args: Array<String>) {
             mejorSemilla = i
             mejorAsignacion = gap.asignacionString()
         }
-        println("Asignacion:" + gap.asignacionString())
+        println("Asignacion:\n" + gap.asignacionString())
         println("Costo: ${gap.evaluacion()}")
         println("¿Es Factible?: ${gap.esFactible()}")
         println("---------------------------------------------\n")
