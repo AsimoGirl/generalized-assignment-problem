@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  20 DEC 2020 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  20 DEC 2020 14:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -881,11 +881,11 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 71.
-<imgs/estructura.png, id=59, 226.59656pt x 231.86626pt>
+<imgs/estructura.png, id=59, 217.5628pt x 215.30438pt>
 File: imgs/estructura.png Graphic file (type png)
 <use imgs/estructura.png>
 Package pdftex.def Info: imgs/estructura.png  used on input line 100.
-(pdftex.def)             Requested size: 181.27748pt x 185.49324pt.
+(pdftex.def)             Requested size: 174.05048pt x 172.24373pt.
 
 Underfull \vbox (badness 4595) has occurred while \output is active []
 
@@ -1120,17 +1120,17 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
 Package rerunfilecheck Info: File `reporte.out' has not changed.
-(rerunfilecheck)             Checksum: F797DA15A863054276347BF6B557E656;532.
+(rerunfilecheck)             Checksum: 184DE4D31F3E10E3D8D8510F7A9B4CE0;517.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
  ) 
 Here is how much of TeX's memory you used:
  9952 strings out of 492982
  140069 string characters out of 6134897
- 247631 words of memory out of 5000000
+ 247643 words of memory out of 5000000
  13328 multiletter control sequences out of 15000+600000
  46500 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,45p,1183b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,45p,1183b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1145,7 +1145,7 @@ e/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on reporte.pdf (6 pages, 169013 bytes).
+Output written on reporte.pdf (6 pages, 167632 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams

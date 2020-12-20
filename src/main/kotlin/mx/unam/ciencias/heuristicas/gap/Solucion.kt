@@ -1,21 +1,23 @@
 package mx.unam.ciencias.heuristicas.gap
 import kotlin.random.Random
-import mx.unam.ciencias.heuristicas.modelo.Trabajador
-import mx.unam.ciencias.heuristicas.modelo.Tarea
-import mx.unam.ciencias.heuristicas.gap.Grafica
-import java.util.*
-import kotlin.collections.ArrayList
+
 
 /**
+ * Clase Solucion
  *
- *
+ * @property grafica
  * @property asignaciones
+ * @property random La semilla para generar valores aleatorios
  * @constructor Crea una solución
  */
 class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val random: Random) {
-    val trabajadores = grafica.trabajadores
-    val tareas = grafica.tareas
+    /** Gráfica que estaremos utilizando*/
+    private val trabajadores = grafica.trabajadores
+    /** Gráfica que estaremos utilizando*/
+    private val tareas = grafica.tareas
+    /** Gráfica que estaremos utilizando*/
     val factible = grafica.esFactible(asignaciones)
+    /** Gráfica que estaremos utilizando*/
     val costo = grafica.calculaCosto(asignaciones)
 
     /**
@@ -24,26 +26,30 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
      * */
     fun generaVecinoSwap(): Solucion {
         var tareaAleatoria1 = (asignaciones.indices).random(random)
-        var tareaAleatoria2 = (asignaciones.indices).random(random)
+        val tareaAleatoria2 = (asignaciones.indices).random(random)
         while (asignaciones[tareaAleatoria1] == asignaciones[tareaAleatoria2]) {
             tareaAleatoria1 = (asignaciones.indices).random(random)
         }
-        var idTrabajador1 = asignaciones[tareaAleatoria1]
-        var idTrabajador2 = asignaciones[tareaAleatoria2]
-        var vecino = asignaciones
+        val idTrabajador1 = asignaciones[tareaAleatoria1]
+        val idTrabajador2 = asignaciones[tareaAleatoria2]
+        val vecino = asignaciones
         vecino[tareaAleatoria1] = idTrabajador2
         vecino[tareaAleatoria2] = idTrabajador1
         return Solucion(grafica, vecino, random)
     }
 
+    /**
+     * Función que cambia la forma en que se muestra la ruta de la solución
+     * @return Una string que representa la solución
+     */
     fun generaVecinoShift(): Solucion {
-        var tareaAleatoria = (asignaciones.indices).random(random)
-        var idviejoTrabajador = asignaciones[tareaAleatoria]
+        val tareaAleatoria = (asignaciones.indices).random(random)
+        val idviejoTrabajador = asignaciones[tareaAleatoria]
         var idnuevoTrabajador = asignaciones[tareaAleatoria]
         while (idviejoTrabajador == idnuevoTrabajador) {
             idnuevoTrabajador = (0 until trabajadores.size).random(random)
         }
-        var vecino = asignaciones
+        val vecino = asignaciones
         vecino[tareaAleatoria] = idnuevoTrabajador
         return Solucion(grafica, vecino, random)
     }
@@ -58,7 +64,7 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
             solucion += "\n Trabajador " + trabajador.id + " -> "
             for(i in asignaciones.indices){
                 if(asignaciones[i] + 1 == trabajador.id) {
-                    var tarea = tareas.find { it.id == i + 1 }
+                    val tarea = tareas.find { it.id == i + 1 }
                     solucion += "Tarea:" + tarea!!.id + " , "
                 }
             }

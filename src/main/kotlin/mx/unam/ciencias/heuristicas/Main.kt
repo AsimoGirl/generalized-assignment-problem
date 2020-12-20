@@ -5,7 +5,6 @@ import mx.unam.ciencias.heuristicas.gap.Grafica
 import mx.unam.ciencias.heuristicas.gap.Solucion
 import mx.unam.ciencias.heuristicas.tabu.Heuristica
 import java.io.File
-import kotlin.collections.ArrayList
 import kotlin.random.Random
 
 
@@ -41,7 +40,7 @@ fun main(args: Array<String>) {
         println("---------------------------------------------\n")
         string += "Semilla: $i, Costo: ${gap.evaluacion()}\n"
     }
-    string += "Mejor Semilla: $mejorSemilla, Mejor Costo: $mejorCosto , Mejor Ruta: $mejorAsignacion"
+    string += "Mejor Semilla: $mejorSemilla, Mejor Costo: $mejorCosto , Mejor Asignación: $mejorAsignacion"
     if(seedS != seedF) {
         File("resultado/resultado-actual.txt").writeText(string)
         println("Mejor Asignación: $mejorAsignacion")

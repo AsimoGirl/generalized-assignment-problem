@@ -13,7 +13,7 @@
 \usepackage{dsfont}   
 \usepackage[spanish]{babel}
 
-\title{El Problema del Agente Viajero}
+\title{El Problema de la Asignación Generalizado}
 \author{
   Sandra del Mar Soto Corderi\\
   No. cuenta: 315707267
@@ -68,7 +68,7 @@ La \underline{función de costo}, $f$ de una permutación $P = v_{\rho(1)}, \ldo
 
 Además de la función de costo, la optimización usa búsqueda local donde se deben conocer los $\underline{vecinos}$ de la solución de TSP. Dos soluciones son vecinas si intercambiando dos elementos de la primera se obtiene la segunda.
 
-\subsection{Aceptación por Umbrales \emph{(Threshold Accepting)}}
+\subsection{Búsqueda Tabú \emph{(Tabu Search)}}
 Ahora hablaremos de la heurística: La heurística que se uso fue el \underline{recocido simulado}, la cual tiene su origen en la metalurgia, en el temple de metales. La idea de este es que si un metal se calienta a altas temperaturas y se le baja la temperatura abruptamente, el metal queda muy frágil, por otro lado si se baja la temperatura gradualmente, el metal se vuelve cada vez mas resistente. En pocas palabras, si se baja la temperatura lentamente, las propiedades del metal son mejores.
 
 Viéndolo formalmente, dado un problema $\mathscr{P}$ de optimización y clasificado como NP-duro, sea $S$ el conjunto de posibles soluciones a una instancia de $\mathscr{P}$. Se supondrá que se tiene una función $f: S \to \mathds{R}^+$, (función objetivo), tal que $0 \leq f(s) \leq \infty$ para cualquier $s \in S$. Dadas $s,s'$ si $f(s) < f(s')$, entonces se considerará a la solución $s$ mejor que $s'$. En el proyecto se usará una variación del recocido simulado llamado aceptación por umbrales. La idea central de \underline{la aceptación por umbrales}, es que dada una temperatura inicial $T \in \mathds{R}^+$ y una solución inicial (obtenida de alguna manera),se busca de forma aleatoria una solución vecina $s'$ tal que $f(s') \leq f(s) + T$, y entonces actualizar $s$ para que sea $s'$, en este caso diremos que la solución $s'$ es \emph{aceptada}. Se continúa de esta manera mientras la temperatura $T$ es disminuida paulatinamente siguiendo una serie de condiciones: el proceso termina cuando $T < \epsilon$ (cuando se han generado un determinado número de soluciones aceptadas) o cuando otra serie de condiciones es satisfecha.

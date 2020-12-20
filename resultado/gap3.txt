@@ -1,4 +1,4 @@
-Soluciones de las distintas semillas en el rango
+Soluciones de las distintas semillas en el rango 0-100, programa duró 2h 7m 33s
 Semilla: 0, Costo: 1879.9699868977382
 Semilla: 1, Costo: 2173.4942977784194
 Semilla: 2, Costo: 1905.017772195125
@@ -1000,7 +1000,7 @@ Semilla: 997, Costo: 1929.2847876952192
 Semilla: 998, Costo: 2136.5881398277347
 Semilla: 999, Costo: 2198.9748016911244
 Semilla: 1000, Costo: 2012.3471064333526
-Mejor Semilla: 396, Mejor Costo: 1674.3844206062538 , Mejor Ruta: 
+Mejor Semilla: 396, Mejor Costo: 1674.3844206062538 , Mejor Asignación: 
  Trabajador 1 -> Tarea:3 , Tarea:24 , Tarea:28 , 
  Trabajador 2 -> Tarea:11 , Tarea:12 , 
  Trabajador 3 -> Tarea:17 , 
