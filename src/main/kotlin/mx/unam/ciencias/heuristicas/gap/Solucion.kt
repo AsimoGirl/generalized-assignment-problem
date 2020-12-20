@@ -22,7 +22,7 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
      * Función que obtiene el vecino de una solución, intercambiamos las tareas de dos trabajadores
      * @return Regresa el par de índices del nuevo trabajador con su tarea
      * */
-    fun generaVecino(): Solucion {
+    fun generaVecinoSwap(): Solucion {
         var tareaAleatoria1 = (asignaciones.indices).random(random)
         var tareaAleatoria2 = (asignaciones.indices).random(random)
         while (asignaciones[tareaAleatoria1] == asignaciones[tareaAleatoria2]) {
@@ -33,6 +33,18 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
         var vecino = asignaciones
         vecino[tareaAleatoria1] = idTrabajador2
         vecino[tareaAleatoria2] = idTrabajador1
+        return Solucion(grafica, vecino, random)
+    }
+
+    fun generaVecinoShift(): Solucion {
+        var tareaAleatoria = (asignaciones.indices).random(random)
+        var idviejoTrabajador = asignaciones[tareaAleatoria]
+        var idnuevoTrabajador = asignaciones[tareaAleatoria]
+        while (idviejoTrabajador == idnuevoTrabajador) {
+            idnuevoTrabajador = (0 until trabajadores.size).random(random)
+        }
+        var vecino = asignaciones
+        vecino[tareaAleatoria] = idnuevoTrabajador
         return Solucion(grafica, vecino, random)
     }
 
