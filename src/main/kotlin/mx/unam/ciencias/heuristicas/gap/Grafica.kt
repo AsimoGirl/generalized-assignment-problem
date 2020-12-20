@@ -57,10 +57,7 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
             var costoAux= tablaCostos[idTrabajador][idTarea]
             costoTotal += costoAux
         }
-        if (esFactible(asignaciones)) {
-            return costoTotal
-        }
-            return costoTotal * 10000
+        return costoTotal
     }
 
 
@@ -103,7 +100,7 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
             var par = Pair(idTrabajador, valorCosto)
             mejoresTrabajadores.add(par)
         }
-        mejoresTrabajadores.sortedWith(compareBy({ it.second }, { it.second }))
+        mejoresTrabajadores.sortBy { it.second }
         for(i in 0 until mejoresTrabajadores.size){
             mejoresTrabajadoresIds[i] = mejoresTrabajadores[i].first
         }

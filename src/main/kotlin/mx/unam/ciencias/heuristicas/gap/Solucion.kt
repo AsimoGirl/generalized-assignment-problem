@@ -54,11 +54,14 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
      */
     override fun toString(): String {
         var solucion = ""
-        for(i in asignaciones.indices){
-            var tarea = tareas.find{it.id == i+1}
-            var trabajador = trabajadores.find{it.id == asignaciones[i] + 1}
-            solucion +=
-                "Tarea:" +  tarea!!.id + " -> Trabajador:" + trabajador!!.id + "\n"
+        for(trabajador in trabajadores){
+            solucion += "\n Trabajador " + trabajador.id + " -> "
+            for(i in asignaciones.indices){
+                if(asignaciones[i] + 1 == trabajador.id) {
+                    var tarea = tareas.find { it.id == i + 1 }
+                    solucion += "Tarea:" + tarea!!.id + " , "
+                }
+            }
         }
         return solucion
     }

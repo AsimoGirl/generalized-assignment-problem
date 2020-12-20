@@ -20,9 +20,11 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
     /** Variable que irá guardando la mejor solución del sistema */
     private var mejorSolucionActual: Solucion = solucionInicial
 
-    private var maximoIteraciones = 1000
+    private var maximoIteraciones = 10000
 
     private var maximoListaTabu = 100
+
+    private var maxVecinos = numtareas * 15
 
     fun buscaVecino(solucionesVecinas: ArrayList<Solucion>, solucionesTabu: ArrayList<Solucion>): Solucion{
         //Eliminamos todos los resultados tabú de la lista
@@ -37,7 +39,7 @@ class Heuristica(g: Grafica, solucionInicial: Solucion) {
 
     fun generaVecinos(solucion: Solucion): ArrayList<Solucion>{
         val vecindad =  ArrayList<Solucion>()
-        for(i in 0 until numtareas) {
+        for(i in 0 until maxVecinos) {
             var vecino1 = solucion.generaVecinoSwap()
             var vecino2 = solucion.generaVecinoShift()
             vecindad.add(vecino1)
