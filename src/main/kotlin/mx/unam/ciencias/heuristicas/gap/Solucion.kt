@@ -15,7 +15,6 @@ import kotlin.collections.ArrayList
 class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val random: Random) {
     val trabajadores = grafica.trabajadores
     val tareas = grafica.tareas
-    //val capacidadTotal = grafica.capacidadTotal
     val factible = grafica.esFactible(asignaciones)
     val costo = grafica.calculaCosto(asignaciones)
 
@@ -23,11 +22,11 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
      * Función que obtiene el vecino de una solución, intercambiamos las tareas de dos trabajadores
      * @return Regresa el par de índices del nuevo trabajador con su tarea
      * */
-    fun generaVecinoSwap(): Solucion {
-        var tareaAleatoria1 = (0 until asignaciones.size).random(random)
-        var tareaAleatoria2 = (0 until asignaciones.size).random(random)
+    fun generaVecino(): Solucion {
+        var tareaAleatoria1 = (asignaciones.indices).random(random)
+        var tareaAleatoria2 = (asignaciones.indices).random(random)
         while (asignaciones[tareaAleatoria1] == asignaciones[tareaAleatoria2]) {
-            tareaAleatoria1 = (1 .. trabajadores.size).random(random)
+            tareaAleatoria1 = (asignaciones.indices).random(random)
         }
         var idTrabajador1 = asignaciones[tareaAleatoria1]
         var idTrabajador2 = asignaciones[tareaAleatoria2]

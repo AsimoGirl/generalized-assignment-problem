@@ -1,203 +1,222 @@
 Soluciones de las distintas semillas en el rango
-Semilla: 10, Costo: 1.6907377776220453E8
-Semilla: 11, Costo: 1.6893277404964074E8
-Mejor Semilla: 11, Mejor Costo: 1.6893277404964074E8 , Mejor Ruta: Tarea:editar el sillón -> Trabajador:Gabriel Garcia
-Tarea:olfatear el departamento -> Trabajador:Ángel Smith
-Tarea:actuar el auto -> Trabajador:María De Jesús Blanco
-Tarea:escribir la ventana -> Trabajador:Enrique Muñoz
-Tarea:mover el cuaderno -> Trabajador:Andrea Garrido
-Tarea:toquetear el gobierno -> Trabajador:María De Guadalupe Sanz
-Tarea:bailar el piso -> Trabajador:Patricia Alonso
-Tarea:darse cuenta de la pared -> Trabajador:Roberto Hall
-Tarea:saber el zoológico -> Trabajador:Santiago Martinez
-Tarea:observar la escuela -> Trabajador:Jaime Gonzalez
-Tarea:probar el templo -> Trabajador:Luis Ángel Santos
-Tarea:tener en cuenta el pantalón -> Trabajador:Antonio Garcia
-Tarea:dibujar el teatro -> Trabajador:María Elena Lopez
-Tarea:arreglar la nube -> Trabajador:Juan Perez
-Tarea:describir el edificio -> Trabajador:Alejandro Hernandez
-Tarea:prometer los guantes -> Trabajador:Araceli Romero
-Tarea:escribir la pradera -> Trabajador:Miguel Rivera
-Tarea:dibujar el anillo -> Trabajador:Yolanda Wilson
-Tarea:querer la oficina -> Trabajador:María De Guadalupe Ortega
-Tarea:completar la letra -> Trabajador:Gabriel Torres
-Tarea:saber la lluvia -> Trabajador:Jaime Gonzalez
-Tarea:desear el lápiz -> Trabajador:José Guadalupe Lozano
-Tarea:roer el calor -> Trabajador:Ruben Gomez
-Tarea:beber la música -> Trabajador:Rosa María Cano
-Tarea:escurrir el ojo -> Trabajador:Isabel Morales
-Tarea:contestar la nieve -> Trabajador:Ruben Gonzalez
-Tarea:escurrir la radio -> Trabajador:Salvador Smith
-Tarea:actuar el agua -> Trabajador:Armando Rivera
-Tarea:oir el sillón -> Trabajador:José Guadalupe Vazquez
-Tarea:entrenar el ave -> Trabajador:Roberto Hall
-Tarea:salir el teclado -> Trabajador:María Teresa Guerrero
-Tarea:deshuesar el bolígrafo -> Trabajador:Enrique Muñoz
-Tarea:cerrar el reloj -> Trabajador:María Del Rosario Rubio
-Tarea:tener el petróleo -> Trabajador:María Johnson
-Tarea:mover el cinturón -> Trabajador:Isabel Morales
-Tarea:ver la persiana -> Trabajador:Juan Manuel Alvarez
-Tarea:jalar la nube -> Trabajador:María De Jesús Moreno
-Tarea:tomar el árbol -> Trabajador:Luis Ángel Taylor
-Tarea:editar la herramienta -> Trabajador:Ruben Gonzalez
-Tarea:darse cuenta de la bomba -> Trabajador:Salvador Smith
-Tarea:silbar el mono -> Trabajador:Ángel Smith
-Tarea:voltear la habitación -> Trabajador:Isabel Brown
-Tarea:explotar el cuadro -> Trabajador:Martín Garrido
-Tarea:reconocer el zoológico -> Trabajador:José De Jesús Rodriguez
-Tarea:escuchar el gobierno -> Trabajador:Eduardo Lozano
-Tarea:silbar la mesada -> Trabajador:Luis Ángel Taylor
-Tarea:mover el cohete -> Trabajador:Martín Clark
-Tarea:deshuesar el debate -> Trabajador:Araceli Romero
-Tarea:escuchar el piso -> Trabajador:María Isabel Nelson
-Tarea:destazar el refugio -> Trabajador:Ana María Scott
-Tarea:mover la tecla -> Trabajador:Andrea Garrido
-Tarea:comer el moño -> Trabajador:Isabel Johnson
-Tarea:imitar la muela -> Trabajador:Verónica Castillo
-Tarea:dormir la casa -> Trabajador:Martín Lozano
-Tarea:entrelazar la letra -> Trabajador:Santiago Martinez
-Tarea:notar la escuela -> Trabajador:Gabriel Torres
-Tarea:romper la estadística -> Trabajador:María Teresa Guerrero
-Tarea:hacer la tecla -> Trabajador:María Isabel Nelson
-Tarea:desmembrar la pistola -> Trabajador:María De Guadalupe Sanz
-Tarea:roer el piso -> Trabajador:Martín Garrido
-Tarea:resolver el hierro -> Trabajador:Luis Ángel Taylor
-Tarea:entender la embarcación -> Trabajador:Martín Clark
-Tarea:desear el cuaderno -> Trabajador:Martín Clark
-Tarea:gritar el discurso -> Trabajador:Isabel Morales
-Tarea:entrar el departamento -> Trabajador:María Johnson
-Tarea:ganar el hierro -> Trabajador:Arturo Delgado
-Tarea:comprender el deporte -> Trabajador:Enrique Muñoz
-Tarea:observar el edificio -> Trabajador:Roberto Hall
-Tarea:entrar el chocolate -> Trabajador:María Johnson
-Tarea:devorar la mano -> Trabajador:Isabel Morales
-Tarea:degustar la universidad -> Trabajador:María Del Carmen Hall
-Tarea:bailar el desodorante -> Trabajador:Martín Garrido
-Tarea:salir la escuela -> Trabajador:María De Jesús Blanco
-Tarea:roer la mano -> Trabajador:José Lopez
-Tarea:ganar el petróleo -> Trabajador:Gabriel Garcia
-Tarea:aprovar el departamento -> Trabajador:María De Guadalupe Sanz
-Tarea:escurrir la librería -> Trabajador:María Johnson
-Tarea:saltar el monitor -> Trabajador:Jaime Gonzalez
-Tarea:desear el proyector -> Trabajador:Gustavo Torres
-Tarea:responder el monitor -> Trabajador:Eduardo Lozano
-Tarea:recordar la navaja -> Trabajador:María Luisa Ruiz
-Tarea:oler el martillo -> Trabajador:Martín Garrido
-Tarea:mecer la música -> Trabajador:José De Jesús Diaz
-Tarea:jalar la rueda -> Trabajador:Roberto Hall
-Tarea:jalar el zapato -> Trabajador:Isabel Morales
-Tarea:quemar la persona -> Trabajador:Pedro Castro
-Tarea:imitar la bala -> Trabajador:Enrique Walker
-Tarea:disolver la muela -> Trabajador:María Del Rosario Rubio
-Tarea:entrenar el plato -> Trabajador:Guadalupe Muñoz
-Tarea:comprar el abuelo -> Trabajador:María Del Carmen Hall
-Tarea:bailar el discurso -> Trabajador:Arturo Delgado
-Tarea:arreglar la agujeta -> Trabajador:Salvador Smith
-Tarea:contestar el mensaje -> Trabajador:Marco Antonio Rodriguez
-Tarea:roer el sillón -> Trabajador:Rosa María Cano
-Tarea:comprar la explosión -> Trabajador:Ángel Smith
-Tarea:destazar la felicidad -> Trabajador:Miguel Ángel Carter
-Tarea:tomar las lentejas -> Trabajador:Gabriel Garcia
-Tarea:planear la impresora -> Trabajador:José De Jesús Rodriguez
-Tarea:cantar el desodorante -> Trabajador:Roberto Hall
-Tarea:gritar el castillo -> Trabajador:Luis Ángel Walker
-Tarea:oir la crema -> Trabajador:Martín Lozano
-Tarea:mecer el televisor -> Trabajador:Ruben Martinez
-Tarea:oler el mapa -> Trabajador:Gustavo Torres
-Tarea:entrelazar las hojas -> Trabajador:Luis Ángel Taylor
-Tarea:saber la librería -> Trabajador:Jorge Jesús Miller
-Tarea:escuchar la tecla -> Trabajador:Martín Allen
-Tarea:comer los auriculares -> Trabajador:Alejandro Hernandez
-Tarea:silbar la pared -> Trabajador:Juan Manuel Alvarez
-Tarea:impartir el bolígrafo -> Trabajador:Jaime Gonzalez
-Tarea:entrelazar la silla -> Trabajador:Gabriel Garcia
-Tarea:degustar la planta -> Trabajador:Juan Perez
-Tarea:darse cuenta de el hierro -> Trabajador:Ruben Ramirez
-Tarea:estudiar la agujeta -> Trabajador:Salvador Smith
-Tarea:tomar el diente -> Trabajador:José De Jesús Rodriguez
-Tarea:roer la librería -> Trabajador:Enrique Moreno
-Tarea:ganar la felicidad -> Trabajador:Ana María Miller
-Tarea:pintar el diente -> Trabajador:Pedro Castro
-Tarea:resolver la mano -> Trabajador:María Isabel Green
-Tarea:dormir la servilleta -> Trabajador:Santiago Martinez
-Tarea:aprender la corbata -> Trabajador:Juan Perez
-Tarea:cerrar la lapicera -> Trabajador:María De Jesús Blanco
-Tarea:impartir el petróleo -> Trabajador:Ruben Martinez
-Tarea:sentir la humedad -> Trabajador:Martín Allen
-Tarea:voltear la música -> Trabajador:Martín Garrido
-Tarea:saber la embarcación -> Trabajador:Alejandro Hernandez
-Tarea:entender el cohete -> Trabajador:Isabel Brown
-Tarea:oir la ventana -> Trabajador:Ruben Ramirez
-Tarea:entender la lapicera -> Trabajador:Ana María Scott
-Tarea:entrar el refugio -> Trabajador:Andrea Garrido
-Tarea:saltar los libros -> Trabajador:María Isabel Green
-Tarea:salir la pared -> Trabajador:María De Guadalupe Ortega
-Tarea:cortar la fiesta -> Trabajador:Gabriel Garcia
-Tarea:destazar la mano -> Trabajador:José Guadalupe Castro
-Tarea:romper el ave -> Trabajador:Miguel Rivera
-Tarea:entrever el televisor -> Trabajador:Sergio Thomas
-Tarea:romper la radio -> Trabajador:José Guadalupe Vazquez
-Tarea:tocar el metal -> Trabajador:Rosa María Cano
-Tarea:colorear la navaja -> Trabajador:Luis Ángel Taylor
-Tarea:mover la embarcación -> Trabajador:Armando Muñoz
-Tarea:subir las montañas -> Trabajador:Salvador Jackson
-Tarea:planear la lluvia -> Trabajador:Yolanda Wilson
-Tarea:probar el celular -> Trabajador:Santiago Martinez
-Tarea:probar el chocolate -> Trabajador:Isabel Brown
-Tarea:darse cuenta de las luces -> Trabajador:Pablo Castillo
-Tarea:eneseñar la persiana -> Trabajador:Juan Perez
-Tarea:entrar el maletín -> Trabajador:Isabel Morales
-Tarea:mecer el abuelo -> Trabajador:Isabel Diaz
-Tarea:romper la bala -> Trabajador:José De Jesús Diaz
-Tarea:estudiar los caramelos -> Trabajador:Enrique Muñoz
-Tarea:dibujar el sillón -> Trabajador:Guillermo Sanz
-Tarea:probar la presidencia -> Trabajador:María Luisa Ruiz
-Tarea:observar la mesada -> Trabajador:María De Guadalupe Ortega
-Tarea:hacer el candado -> Trabajador:Martín Lozano
-Tarea:oler el palo -> Trabajador:Martín Lozano
-Tarea:tener en cuenta la cama -> Trabajador:María Teresa Guerrero
-Tarea:cortar el calor -> Trabajador:Juan Perez
-Tarea:deshuesar el pantalón -> Trabajador:Rosa María Cano
-Tarea:disolver el teclado -> Trabajador:Irma Anderson
-Tarea:cortar la rueda -> Trabajador:José De Jesús Diaz
-Tarea:devorar la abuela -> Trabajador:Marco Antonio Rodriguez
-Tarea:responder el templo -> Trabajador:Enrique Moreno
-Tarea:elegir la planta -> Trabajador:Pablo Castillo
-Tarea:recordar el agua -> Trabajador:Luis Ángel Taylor
-Tarea:comer el piso -> Trabajador:José De Jesús Rodriguez
-Tarea:mecer la herramienta -> Trabajador:Ana María Scott
-Tarea:silbar el anillo -> Trabajador:Martín Clark
-Tarea:amar la escuela -> Trabajador:Martín Clark
-Tarea:estudiar el hipopótamo -> Trabajador:María De Guadalupe Ortega
-Tarea:darse cuenta de las lentejas -> Trabajador:María De Guadalupe Ortega
-Tarea:subir el bolígrafo -> Trabajador:María Del Carmen Hall
-Tarea:prometer el pelo -> Trabajador:Gabriel Torres
-Tarea:mover el granizo -> Trabajador:Jaime Gonzalez
-Tarea:escuchar el abuelo -> Trabajador:Pablo Castillo
-Tarea:querer la crema -> Trabajador:Ángel Smith
-Tarea:entender la cama -> Trabajador:Andrea Garrido
-Tarea:recordar la botella -> Trabajador:Ruben Gomez
-Tarea:inventar la letra -> Trabajador:María Johnson
-Tarea:leer el cohete -> Trabajador:María De Jesús Moreno
-Tarea:beber el planeta -> Trabajador:María De Guadalupe Sanz
-Tarea:escribir la librería -> Trabajador:Enrique Walker
-Tarea:mover la bala -> Trabajador:María Isabel Nelson
-Tarea:prometer la ventana -> Trabajador:María Del Carmen Hall
-Tarea:subir la abuela -> Trabajador:María De Guadalupe Sanz
-Tarea:eneseñar el sol -> Trabajador:Ángel Smith
-Tarea:observar el celular -> Trabajador:Gabriel Torres
-Tarea:voltear el ojo -> Trabajador:José Guadalupe Lozano
-Tarea:sentir el plato -> Trabajador:María De Jesús Blanco
-Tarea:destazar la ensalada -> Trabajador:Guadalupe Muñoz
-Tarea:arreglar la fotografía -> Trabajador:Andrea Garrido
-Tarea:rayar la lapicera -> Trabajador:Irma Anderson
-Tarea:reconocer el petróleo -> Trabajador:Pedro Castro
-Tarea:comprender el edificio -> Trabajador:María Johnson
-Tarea:entrever la lámpara -> Trabajador:Roberto Hall
-Tarea:sabotear el metal -> Trabajador:José Guadalupe Lozano
-Tarea:leer el aluminio -> Trabajador:Santiago Martinez
-Tarea:desear la escuela -> Trabajador:José De Jesús Rodriguez
-Tarea:sentir el partido -> Trabajador:José Lopez
-Tarea:subir la luz -> Trabajador:José Lopez
-Tarea:olvidar la carne -> Trabajador:Irma Anderson
-Tarea:oir la lapicera -> Trabajador:Enrique Muñoz
+Semilla: 140, Costo: 20250.606585515885
+Semilla: 141, Costo: 20250.606585515885
+Semilla: 142, Costo: 20250.606585515885
+Semilla: 143, Costo: 20250.606585515885
+Semilla: 144, Costo: 20250.606585515885
+Semilla: 145, Costo: 20250.606585515885
+Semilla: 146, Costo: 20250.606585515885
+Semilla: 147, Costo: 20250.606585515885
+Semilla: 148, Costo: 20250.606585515885
+Semilla: 149, Costo: 20250.606585515885
+Semilla: 150, Costo: 20250.606585515885
+Semilla: 151, Costo: 20250.606585515885
+Semilla: 152, Costo: 20250.606585515885
+Semilla: 153, Costo: 20250.606585515885
+Semilla: 154, Costo: 20250.606585515885
+Semilla: 155, Costo: 20250.606585515885
+Semilla: 156, Costo: 20250.606585515885
+Semilla: 157, Costo: 20250.606585515885
+Semilla: 158, Costo: 20250.606585515885
+Semilla: 159, Costo: 20250.606585515885
+Semilla: 160, Costo: 20250.606585515885
+Mejor Semilla: 160, Mejor Costo: 20250.606585515885 , Mejor Ruta: Tarea:1 -> Trabajador:55
+Tarea:2 -> Trabajador:67
+Tarea:3 -> Trabajador:65
+Tarea:4 -> Trabajador:65
+Tarea:5 -> Trabajador:9
+Tarea:6 -> Trabajador:31
+Tarea:7 -> Trabajador:35
+Tarea:8 -> Trabajador:52
+Tarea:9 -> Trabajador:52
+Tarea:10 -> Trabajador:32
+Tarea:11 -> Trabajador:46
+Tarea:12 -> Trabajador:54
+Tarea:13 -> Trabajador:8
+Tarea:14 -> Trabajador:1
+Tarea:15 -> Trabajador:52
+Tarea:16 -> Trabajador:13
+Tarea:17 -> Trabajador:18
+Tarea:18 -> Trabajador:61
+Tarea:19 -> Trabajador:44
+Tarea:20 -> Trabajador:30
+Tarea:21 -> Trabajador:27
+Tarea:22 -> Trabajador:63
+Tarea:23 -> Trabajador:40
+Tarea:24 -> Trabajador:53
+Tarea:25 -> Trabajador:1
+Tarea:26 -> Trabajador:72
+Tarea:27 -> Trabajador:73
+Tarea:28 -> Trabajador:39
+Tarea:29 -> Trabajador:40
+Tarea:30 -> Trabajador:29
+Tarea:31 -> Trabajador:32
+Tarea:32 -> Trabajador:70
+Tarea:33 -> Trabajador:4
+Tarea:34 -> Trabajador:20
+Tarea:35 -> Trabajador:53
+Tarea:36 -> Trabajador:35
+Tarea:37 -> Trabajador:25
+Tarea:38 -> Trabajador:28
+Tarea:39 -> Trabajador:70
+Tarea:40 -> Trabajador:6
+Tarea:41 -> Trabajador:60
+Tarea:42 -> Trabajador:40
+Tarea:43 -> Trabajador:33
+Tarea:44 -> Trabajador:69
+Tarea:45 -> Trabajador:66
+Tarea:46 -> Trabajador:57
+Tarea:47 -> Trabajador:22
+Tarea:48 -> Trabajador:51
+Tarea:49 -> Trabajador:35
+Tarea:50 -> Trabajador:30
+Tarea:51 -> Trabajador:68
+Tarea:52 -> Trabajador:16
+Tarea:53 -> Trabajador:2
+Tarea:54 -> Trabajador:28
+Tarea:55 -> Trabajador:12
+Tarea:56 -> Trabajador:3
+Tarea:57 -> Trabajador:4
+Tarea:58 -> Trabajador:37
+Tarea:59 -> Trabajador:30
+Tarea:60 -> Trabajador:5
+Tarea:61 -> Trabajador:72
+Tarea:62 -> Trabajador:4
+Tarea:63 -> Trabajador:50
+Tarea:64 -> Trabajador:54
+Tarea:65 -> Trabajador:32
+Tarea:66 -> Trabajador:6
+Tarea:67 -> Trabajador:29
+Tarea:68 -> Trabajador:15
+Tarea:69 -> Trabajador:21
+Tarea:70 -> Trabajador:34
+Tarea:71 -> Trabajador:15
+Tarea:72 -> Trabajador:45
+Tarea:73 -> Trabajador:26
+Tarea:74 -> Trabajador:19
+Tarea:75 -> Trabajador:72
+Tarea:76 -> Trabajador:50
+Tarea:77 -> Trabajador:63
+Tarea:78 -> Trabajador:67
+Tarea:79 -> Trabajador:25
+Tarea:80 -> Trabajador:4
+Tarea:81 -> Trabajador:25
+Tarea:82 -> Trabajador:6
+Tarea:83 -> Trabajador:18
+Tarea:84 -> Trabajador:21
+Tarea:85 -> Trabajador:1
+Tarea:86 -> Trabajador:71
+Tarea:87 -> Trabajador:18
+Tarea:88 -> Trabajador:23
+Tarea:89 -> Trabajador:49
+Tarea:90 -> Trabajador:35
+Tarea:91 -> Trabajador:27
+Tarea:92 -> Trabajador:42
+Tarea:93 -> Trabajador:62
+Tarea:94 -> Trabajador:53
+Tarea:95 -> Trabajador:63
+Tarea:96 -> Trabajador:60
+Tarea:97 -> Trabajador:35
+Tarea:98 -> Trabajador:32
+Tarea:99 -> Trabajador:49
+Tarea:100 -> Trabajador:48
+Tarea:101 -> Trabajador:62
+Tarea:102 -> Trabajador:74
+Tarea:103 -> Trabajador:75
+Tarea:104 -> Trabajador:31
+Tarea:105 -> Trabajador:39
+Tarea:106 -> Trabajador:17
+Tarea:107 -> Trabajador:43
+Tarea:108 -> Trabajador:42
+Tarea:109 -> Trabajador:65
+Tarea:110 -> Trabajador:32
+Tarea:111 -> Trabajador:61
+Tarea:112 -> Trabajador:61
+Tarea:113 -> Trabajador:30
+Tarea:114 -> Trabajador:26
+Tarea:115 -> Trabajador:3
+Tarea:116 -> Trabajador:1
+Tarea:117 -> Trabajador:28
+Tarea:118 -> Trabajador:50
+Tarea:119 -> Trabajador:65
+Tarea:120 -> Trabajador:25
+Tarea:121 -> Trabajador:16
+Tarea:122 -> Trabajador:3
+Tarea:123 -> Trabajador:39
+Tarea:124 -> Trabajador:63
+Tarea:125 -> Trabajador:69
+Tarea:126 -> Trabajador:8
+Tarea:127 -> Trabajador:30
+Tarea:128 -> Trabajador:7
+Tarea:129 -> Trabajador:36
+Tarea:130 -> Trabajador:36
+Tarea:131 -> Trabajador:55
+Tarea:132 -> Trabajador:19
+Tarea:133 -> Trabajador:19
+Tarea:134 -> Trabajador:65
+Tarea:135 -> Trabajador:51
+Tarea:136 -> Trabajador:60
+Tarea:137 -> Trabajador:27
+Tarea:138 -> Trabajador:38
+Tarea:139 -> Trabajador:70
+Tarea:140 -> Trabajador:8
+Tarea:141 -> Trabajador:40
+Tarea:142 -> Trabajador:28
+Tarea:143 -> Trabajador:66
+Tarea:144 -> Trabajador:20
+Tarea:145 -> Trabajador:37
+Tarea:146 -> Trabajador:38
+Tarea:147 -> Trabajador:62
+Tarea:148 -> Trabajador:69
+Tarea:149 -> Trabajador:37
+Tarea:150 -> Trabajador:40
+Tarea:151 -> Trabajador:56
+Tarea:152 -> Trabajador:7
+Tarea:153 -> Trabajador:53
+Tarea:154 -> Trabajador:63
+Tarea:155 -> Trabajador:36
+Tarea:156 -> Trabajador:12
+Tarea:157 -> Trabajador:34
+Tarea:158 -> Trabajador:23
+Tarea:159 -> Trabajador:12
+Tarea:160 -> Trabajador:43
+Tarea:161 -> Trabajador:57
+Tarea:162 -> Trabajador:39
+Tarea:163 -> Trabajador:74
+Tarea:164 -> Trabajador:1
+Tarea:165 -> Trabajador:16
+Tarea:166 -> Trabajador:39
+Tarea:167 -> Trabajador:57
+Tarea:168 -> Trabajador:13
+Tarea:169 -> Trabajador:21
+Tarea:170 -> Trabajador:23
+Tarea:171 -> Trabajador:15
+Tarea:172 -> Trabajador:37
+Tarea:173 -> Trabajador:19
+Tarea:174 -> Trabajador:40
+Tarea:175 -> Trabajador:16
+Tarea:176 -> Trabajador:51
+Tarea:177 -> Trabajador:7
+Tarea:178 -> Trabajador:69
+Tarea:179 -> Trabajador:44
+Tarea:180 -> Trabajador:49
+Tarea:181 -> Trabajador:37
+Tarea:182 -> Trabajador:28
+Tarea:183 -> Trabajador:24
+Tarea:184 -> Trabajador:13
+Tarea:185 -> Trabajador:12
+Tarea:186 -> Trabajador:63
+Tarea:187 -> Trabajador:31
+Tarea:188 -> Trabajador:43
+Tarea:189 -> Trabajador:35
+Tarea:190 -> Trabajador:64
+Tarea:191 -> Trabajador:54
+Tarea:192 -> Trabajador:59
+Tarea:193 -> Trabajador:12
+Tarea:194 -> Trabajador:30
+Tarea:195 -> Trabajador:56
+Tarea:196 -> Trabajador:45
+Tarea:197 -> Trabajador:33
+Tarea:198 -> Trabajador:68
+Tarea:199 -> Trabajador:63
+Tarea:200 -> Trabajador:18

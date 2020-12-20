@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
         val solucionInicial = Solucion(graf1, asignacionActual, Random(i))
         val gap = Heuristica(graf1, solucionInicial)
         //Heuristica
-        gap.aceptacionPorUmbrales()
+        gap.tabu()
         if (gap.evaluacion() <= mejorCosto){
             mejorCosto = gap.evaluacion()
             mejorSemilla = i
