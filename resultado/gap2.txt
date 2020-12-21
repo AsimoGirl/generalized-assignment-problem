@@ -1,0 +1,228 @@
+Soluciones de las distintas semillas en el rango 0-150
+Semilla: 0, Costo: 2862.007603508983
+Semilla: 1, Costo: 3368.2478766712507
+Semilla: 2, Costo: 3016.4271495570283
+Semilla: 3, Costo: 3597.434954032794
+Semilla: 4, Costo: 3507.171771646578
+Semilla: 5, Costo: 2945.7422564896774
+Semilla: 6, Costo: 3310.346093655519
+Semilla: 7, Costo: 2995.7501816418776
+Semilla: 8, Costo: 3390.4712357010094
+Semilla: 9, Costo: 3397.6365083569144
+Semilla: 10, Costo: 3338.1996809894345
+Semilla: 11, Costo: 3398.264070495103
+Semilla: 12, Costo: 3030.109819493318
+Semilla: 13, Costo: 3378.4084837486344
+Semilla: 14, Costo: 3655.3073805851755
+Semilla: 15, Costo: 3422.7404705113486
+Semilla: 16, Costo: 2662.0031266869614
+Semilla: 17, Costo: 3207.9641102314517
+Semilla: 18, Costo: 3258.950716294891
+Semilla: 19, Costo: 3245.1138290530293
+Semilla: 20, Costo: 3376.808282093599
+Semilla: 21, Costo: 3106.6719020189234
+Semilla: 22, Costo: 3547.441891093092
+Semilla: 23, Costo: 3350.9564223120724
+Semilla: 24, Costo: 2997.58318311148
+Semilla: 25, Costo: 3190.4600198548
+Semilla: 26, Costo: 3086.969765044425
+Semilla: 27, Costo: 3250.356845544387
+Semilla: 28, Costo: 3037.283056878823
+Semilla: 29, Costo: 3098.6529926157727
+Semilla: 30, Costo: 2804.2459382669676
+Semilla: 31, Costo: 2959.8423720338656
+Semilla: 32, Costo: 3656.974401647189
+Semilla: 33, Costo: 2850.927677417014
+Semilla: 34, Costo: 2976.5373606522908
+Semilla: 35, Costo: 3007.0651903020803
+Semilla: 36, Costo: 2968.609349561128
+Semilla: 37, Costo: 3134.8465645527776
+Semilla: 38, Costo: 2985.9831279732425
+Semilla: 39, Costo: 3248.696438304442
+Semilla: 40, Costo: 3134.7350348655095
+Semilla: 41, Costo: 2901.939538202095
+Semilla: 42, Costo: 3258.8997149173915
+Semilla: 43, Costo: 3677.27756519014
+Semilla: 44, Costo: 3294.325534888198
+Semilla: 45, Costo: 3341.615442819202
+Semilla: 46, Costo: 3669.0840981407264
+Semilla: 47, Costo: 3672.9713993153573
+Semilla: 48, Costo: 3193.5990048778767
+Semilla: 49, Costo: 3158.987288234831
+Semilla: 50, Costo: 3202.5545151016727
+Semilla: 51, Costo: 3326.619518568124
+Semilla: 52, Costo: 3119.3060289988744
+Semilla: 53, Costo: 3199.034815585732
+Semilla: 54, Costo: 2974.679242405256
+Semilla: 55, Costo: 2897.8446995435615
+Semilla: 56, Costo: 3239.078526881734
+Semilla: 57, Costo: 3168.5247098131404
+Semilla: 58, Costo: 3189.396647561132
+Semilla: 59, Costo: 3298.3521696096022
+Semilla: 60, Costo: 2968.3748291719025
+Semilla: 61, Costo: 3180.3929064463305
+Semilla: 62, Costo: 2955.824277821369
+Semilla: 63, Costo: 3116.4777436888417
+Semilla: 64, Costo: 3248.5779367142354
+Semilla: 65, Costo: 3109.195598255446
+Semilla: 66, Costo: 3063.880175348521
+Semilla: 67, Costo: 3292.7886207364495
+Semilla: 68, Costo: 2829.826110198305
+Semilla: 69, Costo: 3266.609116299931
+Semilla: 70, Costo: 3014.144385365273
+Semilla: 71, Costo: 3517.686344784383
+Semilla: 72, Costo: 3381.346134857562
+Semilla: 73, Costo: 3299.9028137192645
+Semilla: 74, Costo: 2791.1734256328273
+Semilla: 75, Costo: 3033.293666692526
+Semilla: 76, Costo: 3352.215018250315
+Semilla: 77, Costo: 3058.469025365673
+Semilla: 78, Costo: 3752.6101742045676
+Semilla: 79, Costo: 3204.63084425128
+Semilla: 80, Costo: 3060.615899826109
+Semilla: 81, Costo: 3193.891322332291
+Semilla: 82, Costo: 3263.630438391519
+Semilla: 83, Costo: 4051.549861155646
+Semilla: 84, Costo: 3057.8901902281227
+Semilla: 85, Costo: 3216.3412695184065
+Semilla: 86, Costo: 3457.594249939439
+Semilla: 87, Costo: 3328.81178392214
+Semilla: 88, Costo: 3231.523043838478
+Semilla: 89, Costo: 3174.8813584671157
+Semilla: 90, Costo: 3644.814116023195
+Semilla: 91, Costo: 3531.651818218599
+Semilla: 92, Costo: 3106.8601269177343
+Semilla: 93, Costo: 3087.6238907223556
+Semilla: 94, Costo: 3293.104521135364
+Semilla: 95, Costo: 3346.3484510476383
+Semilla: 96, Costo: 3283.3409221214592
+Semilla: 97, Costo: 3036.4759309481706
+Semilla: 98, Costo: 2920.119304157385
+Semilla: 99, Costo: 3020.8552771626973
+Semilla: 100, Costo: 3268.8483889678027
+Semilla: 101, Costo: 3700.590521573952
+Semilla: 102, Costo: 3024.936226345826
+Semilla: 103, Costo: 3313.319818095617
+Semilla: 104, Costo: 3544.3181778280177
+Semilla: 105, Costo: 3118.6856860027524
+Semilla: 106, Costo: 3093.80862506579
+Semilla: 107, Costo: 3027.828163810849
+Semilla: 108, Costo: 3044.9146900968703
+Semilla: 109, Costo: 3151.624667867458
+Semilla: 110, Costo: 3099.2825730339855
+Semilla: 111, Costo: 3061.106141719761
+Semilla: 112, Costo: 3089.391667031983
+Semilla: 113, Costo: 3035.9725240748917
+Semilla: 114, Costo: 3196.367809729859
+Semilla: 115, Costo: 3483.073556740844
+Semilla: 116, Costo: 3136.397224090797
+Semilla: 117, Costo: 3252.025152452206
+Semilla: 118, Costo: 3130.145111574411
+Semilla: 119, Costo: 3154.8764890528205
+Semilla: 120, Costo: 3724.273568583394
+Semilla: 121, Costo: 3232.857171236079
+Semilla: 122, Costo: 3241.5922202123643
+Semilla: 123, Costo: 3020.020017803497
+Semilla: 124, Costo: 3578.4594038140194
+Semilla: 125, Costo: 3111.7855645722075
+Semilla: 126, Costo: 2866.30461657472
+Semilla: 127, Costo: 3091.8250086434246
+Semilla: 128, Costo: 3745.6172307536585
+Semilla: 129, Costo: 2857.6256789798
+Semilla: 130, Costo: 3211.491994141319
+Semilla: 131, Costo: 3386.60497934707
+Semilla: 132, Costo: 3119.191715767551
+Semilla: 133, Costo: 3062.9535640042227
+Semilla: 134, Costo: 3059.878408422834
+Semilla: 135, Costo: 3050.1249212592
+Semilla: 136, Costo: 2862.619252068506
+Semilla: 137, Costo: 3227.735156772939
+Semilla: 138, Costo: 3348.4523531006466
+Semilla: 139, Costo: 3072.2045024938598
+Semilla: 140, Costo: 3166.7882874996117
+Semilla: 141, Costo: 2980.5771179956673
+Semilla: 142, Costo: 3345.4505875027876
+Semilla: 143, Costo: 3436.3662988260835
+Semilla: 144, Costo: 3255.7821539187976
+Semilla: 145, Costo: 3201.0782738554362
+Semilla: 146, Costo: 3124.3490875375946
+Semilla: 147, Costo: 2982.965724365592
+Semilla: 148, Costo: 3043.661066777766
+Semilla: 149, Costo: 3320.1271362117227
+Semilla: 150, Costo: 2577.630596026299
+Mejor Semilla: 150, Mejor Costo: 2577.630596026299 , Mejor Asignación: 
+ Trabajador 1 -> Tarea:62 , Tarea:133 , Tarea:138 , Tarea:190 , Tarea:193 , 
+ Trabajador 2 -> Tarea:15 , Tarea:117 , 
+ Trabajador 3 -> Tarea:12 , Tarea:46 , Tarea:137 , 
+ Trabajador 4 -> Tarea:9 , Tarea:80 , Tarea:83 , Tarea:123 , Tarea:168 , 
+ Trabajador 5 -> Tarea:14 , Tarea:198 , 
+ Trabajador 6 -> Tarea:33 , Tarea:63 , Tarea:72 , 
+ Trabajador 7 -> Tarea:53 , Tarea:107 , 
+ Trabajador 8 -> Tarea:60 , Tarea:114 , 
+ Trabajador 9 -> Tarea:156 , 
+ Trabajador 10 -> Tarea:37 , Tarea:150 , 
+ Trabajador 11 -> Tarea:41 , Tarea:77 , 
+ Trabajador 12 -> Tarea:4 , Tarea:31 , Tarea:113 , Tarea:127 , 
+ Trabajador 13 -> Tarea:96 , Tarea:158 , 
+ Trabajador 14 -> Tarea:5 , Tarea:59 , Tarea:154 , Tarea:169 , 
+ Trabajador 15 -> Tarea:112 , Tarea:197 , 
+ Trabajador 16 -> Tarea:66 , 
+ Trabajador 17 -> Tarea:13 , 
+ Trabajador 18 -> Tarea:21 , Tarea:57 , Tarea:95 , Tarea:180 , 
+ Trabajador 19 -> Tarea:176 , 
+ Trabajador 20 -> 
+ Trabajador 21 -> Tarea:34 , Tarea:35 , Tarea:102 , Tarea:196 , 
+ Trabajador 22 -> Tarea:43 , Tarea:93 , 
+ Trabajador 23 -> Tarea:48 , Tarea:68 , Tarea:122 , 
+ Trabajador 24 -> Tarea:108 , Tarea:182 , 
+ Trabajador 25 -> Tarea:25 , Tarea:121 , 
+ Trabajador 26 -> Tarea:19 , 
+ Trabajador 27 -> Tarea:27 , Tarea:29 , Tarea:38 , Tarea:81 , Tarea:89 , Tarea:111 , 
+ Trabajador 28 -> Tarea:146 , Tarea:148 , 
+ Trabajador 29 -> Tarea:8 , Tarea:159 , 
+ Trabajador 30 -> Tarea:187 , 
+ Trabajador 31 -> Tarea:170 , Tarea:178 , 
+ Trabajador 32 -> Tarea:39 , Tarea:64 , Tarea:69 , Tarea:101 , Tarea:141 , 
+ Trabajador 33 -> Tarea:6 , Tarea:56 , Tarea:74 , Tarea:181 , Tarea:195 , 
+ Trabajador 34 -> Tarea:149 , Tarea:157 , 
+ Trabajador 35 -> Tarea:26 , 
+ Trabajador 36 -> Tarea:75 , 
+ Trabajador 37 -> Tarea:55 , Tarea:119 , 
+ Trabajador 38 -> Tarea:155 , 
+ Trabajador 39 -> Tarea:16 , Tarea:91 , Tarea:103 , Tarea:109 , Tarea:144 , 
+ Trabajador 40 -> Tarea:120 , Tarea:174 , 
+ Trabajador 41 -> Tarea:30 , Tarea:136 , Tarea:188 , 
+ Trabajador 42 -> Tarea:17 , Tarea:22 , Tarea:153 , Tarea:160 , Tarea:162 , Tarea:163 , 
+ Trabajador 43 -> Tarea:2 , Tarea:84 , Tarea:105 , Tarea:134 , Tarea:161 , Tarea:185 , 
+ Trabajador 44 -> Tarea:28 , Tarea:40 , Tarea:49 , Tarea:58 , Tarea:70 , Tarea:99 , Tarea:125 , Tarea:139 , 
+ Trabajador 45 -> Tarea:47 , Tarea:164 , Tarea:165 , Tarea:175 , 
+ Trabajador 46 -> Tarea:20 , Tarea:100 , 
+ Trabajador 47 -> Tarea:61 , Tarea:71 , Tarea:76 , Tarea:179 , 
+ Trabajador 48 -> Tarea:42 , Tarea:177 , Tarea:200 , 
+ Trabajador 49 -> Tarea:118 , 
+ Trabajador 50 -> Tarea:7 , Tarea:67 , Tarea:104 , Tarea:171 , Tarea:191 , 
+ Trabajador 51 -> Tarea:45 , Tarea:86 , Tarea:124 , Tarea:173 , Tarea:186 , Tarea:194 , 
+ Trabajador 52 -> Tarea:50 , Tarea:126 , Tarea:145 , 
+ Trabajador 53 -> Tarea:87 , Tarea:130 , 
+ Trabajador 54 -> Tarea:52 , 
+ Trabajador 55 -> Tarea:90 , Tarea:142 , 
+ Trabajador 56 -> Tarea:92 , Tarea:192 , 
+ Trabajador 57 -> Tarea:106 , 
+ Trabajador 58 -> Tarea:132 , Tarea:147 , 
+ Trabajador 59 -> Tarea:23 , Tarea:51 , Tarea:129 , 
+ Trabajador 60 -> Tarea:88 , Tarea:151 , Tarea:152 , 
+ Trabajador 61 -> Tarea:78 , Tarea:167 , Tarea:183 , 
+ Trabajador 62 -> Tarea:135 , 
+ Trabajador 63 -> Tarea:10 , Tarea:94 , Tarea:116 , 
+ Trabajador 64 -> Tarea:18 , Tarea:131 , 
+ Trabajador 65 -> Tarea:79 , Tarea:115 , Tarea:184 , 
+ Trabajador 66 -> Tarea:36 , Tarea:54 , Tarea:172 , 
+ Trabajador 67 -> Tarea:166 , 
+ Trabajador 68 -> Tarea:98 , 
+ Trabajador 69 -> 
+ Trabajador 70 -> Tarea:73 , Tarea:97 , Tarea:143 , 
+ Trabajador 71 -> Tarea:128 , Tarea:189 , 
+ Trabajador 72 -> Tarea:1 , Tarea:32 , 
+ Trabajador 73 -> Tarea:24 , Tarea:44 , Tarea:85 , Tarea:110 , 
+ Trabajador 74 -> Tarea:3 , Tarea:82 , Tarea:140 , Tarea:199 , 
+ Trabajador 75 -> Tarea:11 , Tarea:65 , 

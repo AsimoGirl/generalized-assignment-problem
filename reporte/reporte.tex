@@ -64,13 +64,12 @@ Fase 2: Aplicar un método de búsqueda local.\\
 Fase 3: Actualizar los parámetros (si hay).\\
 Más adelante en el artículo explican como la búsqueda tabú entra en estos.
 
-Los artículos \cite{tsgap} y \cite{tshgap} resuelven el problema GAP usando búsqueda tabú y proponen la generación de la solución inicial de forma similar, plantean que como solemos tener más tareas que trabajadores, se puede reducir el problema a knapsack o mejor conocido como problema de la mochila y resolverse con el algoritmo de Martello y Toth (Un algoritmo greedy muy utilizado para problemas de knapsack). 
+Los artículos \cite{tsgap} y \cite{tshgap} resuelven el problema GAP usando búsqueda tabú y proponen la generación de la solución inicial de forma similar, plantean que como solemos tener más tareas que trabajadores, se puede reducir el problema a knapsack o mejor conocido como problema de la mochila y resolverse con el algoritmo de Martello y Toth (Un algoritmo greedy muy utilizado para problemas de knapsack). Así mismo ellos manejan la forma de generar la vecindad de una solución usando swap y shift, cosa que implementé en mi solución.
 
 De todo lo anterior decidí usar un método greedy para obtener mi solución inicial, quise implementar el algoritmo de Martello y Toth, pero consideré era demasiado 
 
 Ahora vamos a explicar de una forma muy sencilla en que consiste la búsqueda tabú:
-
-
+La búsqueda tabú es una heurística para búsqueda local que fue declarada por Fred Glover \cite{tabuglover} y su objetivo es salirse de óptimos locales para alcanzar óptimos globales, por ello maneja una lista tabú, para evitar seguir en vecindades cerca de un óptimo local y poder recorrer el espacio de búsqueda de forma más inteligente y rápida. Hay dos conceptos importantes en la búsqueda tabú para lograr mejores soluciones, esos son la diversificación (se busca recorrer lo más posible del espacio de búsqueda) y la intensificación (concentrarse en una región local sabiendo que hay una buena solución por ahí). Estos dos conceptos se usan  de forma implícita en la implementación dada durante la obtención del mejor vecino, ya que diversifica al usar la lista tabú e intensifica al buscar en la vecindad del mejor vecino posible. La búsqueda tabú utiliza memorias, estas son a corto, mediano y largo plazo. La de corto plazo es nuestra lista tabú, las de mediano y largo se utilizan para hacer una búsqueda aún más inteligente, donde vamos guardando los movimientos posibles al obtener vecinos y se buscan las similitudes de estos movimientos para aceptar o no vecinos, esto no se implementé tan explícitamente, pero se mantuvo la idea-
 
 En este proyecto se uso la versión simplificada, donde no se hace manejo de la memoria a mediano y largo plazo, es decir se siguió un algoritmo muy parecido al que presentan en \cite{clever}. A continuación se muestra el algoritmo usado en el proyecto:
 
@@ -102,7 +101,7 @@ En este proyecto se uso la versión simplificada, donde no se hace manejo de la 
 \begin{itemize}
 	\item{ \textbf{Lenguaje de programación:} Kotlin 1.4.10. 
 		
-	Este proyecto se inició en el lenguaje de programación Rust pero por problemas de configuración y por cuestiones de tiempo, se decidió cambiar a un lenguaje ya conocido como es Java, pero ya que el profesor no es muy aficionado a Java, se buscaron alternativas y la mejor opción encontrada en ese momento fue Kotlin. Kotlin tiene una sintaxis muy intuitiva y permite usar todas las bibliotecas de Java.}
+	Por presiones de tiempo, decidí usar un lenguaje que ya conociera y tuviera cosas parecidas implementadas, así que para reciclar código y por facilidad se usó el mismo lenguaje de programación del proyecto pasado}
 	\item {\textbf{IDE:} IntelliJ IDEA
 		
 	Es la IDE más popular para Java y es compatible con Kotlin, por lo que se usó}
@@ -128,7 +127,7 @@ En este proyecto se uso la versión simplificada, donde no se hace manejo de la 
 
 El proyecto se hizo con un enfoque orientado a objetos, por la naturaleza del lenguaje escogido. 
 
-Originalmente se iban a generar varias interfaces, pero al final se optó por un diseño más sencillo: El proyecto se dividió en tres paquetes: 
+El proyecto se dividió en tres paquetes: 
 \begin{itemize}
 	\item modelo
 	
@@ -148,24 +147,24 @@ A continuación se van a enlistar las clases usadas y lo que hace cada una:
 \begin{itemize}
 	\item {Tarea.kt
 		
-		Esta clase almacena la información de las ciudades de nuestro problema, es decir, las coordenadas, nombre, id, población, de cada ciudad que se usará en el problema. Se declaró como una \emph{data class} de Kotlin, ya que este tipo de clases se dedican únicamente a almacenar información, lo que hace que al construir el objeto, hayan varios métodos ya implementados. Igualmente es necesario comentar que no se incluyó la implementación de getters y setters debido a que en Kotlin en la documentación mencionan que no son necesarios.
+		Esta clase almacena la información de las tareas de nuestro problema, es decir el nombre y el id de cada tarea que se asignará. Se declaró como una \emph{data class} de Kotlin, ya que este tipo de clases se dedican únicamente a almacenar información, lo que hace que al construir el objeto, hayan varios métodos ya implementados. Igualmente es necesario comentar que no se incluyó la implementación de getters y setters debido a que en Kotlin en la documentación mencionan que no son necesarios.
 	}
 	\item {Trabajador.kt
 		
-		Esta clase es análoga a la de Ciudad en la cuestión que es una \emph{data class} donde guardamos las conexiones entre ciudades. Originalmente no se iba a usar este objeto, pero para facilitar el acceso a la base de datos con el DAO, se creó.
+		Esta clase es análoga a la de Tarea en la cuestión que es una \emph{data class} donde guardamos la información de los trabajadores.
 	}
 	\item {Grafica.kt
 		
-		Esta clase es de las que cuentan con más métodos y es donde se realizan todas las funciones de la gráfica. Nuestra gráfica se representa como una matriz de adyacencia cuya forma de llenado sigue la definición de peso aumentado mencionado en la introducción. En esta clase se manejan los objetos de ciudad y conexion para obtener la información necesaria de acuerdo a la función. Cabe mencionar que para optimizar el tiempo en que corre el programa se agregó una función para obtener el peso de forma más directa, esta función optimiza la obtención del costo de la instancia una vez que se hace intercambio de índices al tomar las 4 aristas posibles de la gráfica que se ven afectadas con este intercambio y así obtener el nuevo costo restando los pesos de estas aristas eliminadas y la suma de agregar los nuevas aristas. Así obtenemos el peso durante las soluciones de forma constante y no lineal como sería en el caso de mandar a llamar a la función de costo de nuevo en cada caso.
+		Esta clase es de las que cuentan con más métodos y es donde se realizan todas las funciones de la gráfica. Aquí se obtienen las funciones de costo, que en este caso es el costo de una asignación de tareas y verificamos si son factibles. En esta clase se generan todos los métodos que puedan incluir verificar conexiones entre los trabajadores y las tareas. Así mismo aquí es donde se crea la solución inicial de un forma greedy, el código viene explicado, pero en pocas palabras, lo que se hace es tomar las tareas de forma aleatoria y buscar el trabajador de menor costo que siga manteniendo la solución factible, si esto no es posible se da una solución inicial aleatoria.
 	}
 	\item {Solucion.kt
 		
-		Esta clase es bastante sencilla, ya que solo crea soluciones para el tsp, es decir invierte aleatoriamiente vecinos de la ruta para crear nuevas con la esperanza de que mejore. Esta clase originalmente iba a ir integrada con la clase de Grafica, pero era más limpio y fácil de comprender manejar los métodos de la clase heuristica con un objeto sencillo Solucion que con el objeto de una clase llena de métodos como es Grafica.
+		Esta clase es bastante sencilla, ya que solo crea soluciones para el gap, es decir invierte aleatoriamiente vecinos de la asignación para crear nuevas con la esperanza de que mejore. Esta clase originalmente iba a ir integrada con la clase de Grafica, pero era más limpio y fácil de comprender manejar los métodos de la clase heurística con un objeto sencillo Solucion que con el objeto de una clase llena de métodos como es Grafica.
 	
 	}
 	\item {Heuristica.kt
 		
-		Esta podría considerarse como la clase más ilustrativa del objetivo de este proyecto ya que es la que realiza el procedimiento de la heurística de recocido simulado con aceptación por umbrales. En pocas palabras el procedimiento que se sigue es obtener una temperatura con un valor lo suficientemente grande como para recorrer el espacio de búsqueda de forma rápida, esta temperatura se va disminuyendo al multiplicarla con un factor de congelamiento y mientras se enfría se van generando soluciones nuevas, de las cuales se toman las mejores. Los métodos de esta clase son la implementación los algoritmos que vienen descritos en el pdf llamado hoc que se encuentra dentro de la carpeta fuentes en este mismo directorio. Se había implementado un método que optimizaba los resultados, este método revisaba todos los vecinos de la mejor solución y tomaba el mejor de ellos, pero alentaba tanto al sistema que no se podían hacer las pruebas con muchas semillas.
+		Esta podría considerarse como la clase más ilustrativa del objetivo de este proyecto ya que es la que realiza el procedimiento de la heurística de recocido simulado con aceptación por umbrales. En pocas palabras el procedimiento que se sigue es generar la vecindad de una solución, ver en esa vecindad cual es el vecino con mejor costo que no sea tabú y compararlo con la mejor solución hasta el momento. La lista tabú se va llenando con los mejor mejores vecinos y si sobrepasa su límite de tamaño se eliminan los primeros obtenidos.
 	
 	}
 	\item {DAO.kt
@@ -174,7 +173,7 @@ A continuación se van a enlistar las clases usadas y lo que hace cada una:
 	}
 	\item {Main.kt
 		
-		Este archivo no es una clase como tal, sino es el main donde se ejecuta el sistema. Lo que hace es tomar la lista de ciudades dada por el usuario con las cuales crea un objeto gráfica, este objeto gráfica manda a crear soluciones usando el rango de semillas proporcionado y manda a llamar a la heurística para mejorar la solución en los parámetros que se den. Al final se imprimen los costos de todas las mejores soluciones y se regresa la ruta de la mejor solución de todas.
+		Este archivo no es una clase como tal, sino es el main donde se ejecuta el sistema. Lo que hace es tomar la lista de ciudades dada por el usuario con las cuales crea un objeto gráfica, este objeto gráfica manda a crear soluciones usando el rango de semillas proporcionado y manda a llamar a la heurística para mejorar la solución en los parámetros que se den. Al final se imprimen los costos de todas las mejores soluciones y se regresa la asignación de la mejor solución de todas.
 	}
 \end{itemize}
 
@@ -185,7 +184,7 @@ Para ver más detalladamente la implementación, favor de generar la documentaci
 
 Probando diferentes semillas de un lote con varias semillas para todas las instancias de GAP, se logró encontrar una semilla para cada ejemplar de forma que se obtuvieran soluciones factibles y se tomó la mejor solución de todas.
 
-El sistema tiene la cualidad de que cada vez que lo ejecutas aunque sea con la misma semilla, no te dará la misma función de costo, esto es por como se implementó la aleatoriedad en las soluciones dentro del programa. Por esa razón siempre se devuelve la asignación de la mejor solución, para que no se pierda. 
+El sistema tiene la cualidad de que cada vez que lo ejecutas aunque sea con la misma semilla, no te dará el mismo costo, esto es por como se implementó la aleatoriedad en las soluciones dentro del programa. Por esa razón siempre se devuelve la asignación de la mejor solución, para que no se pierda. 
 
 Los parámetros usados en el sistema de la heurística fueron cambiando de acuerdo a pruebas hechas con pocas semillas y las recomendaciones del profesor y la clase, después de encontrar mejores soluciones satisfactorias, los parámetros quedaron de la siguiente forma:
 \begin{itemize}
@@ -196,6 +195,8 @@ numTareas * 10
 \item Tamaño máximo que puede tener la lista tabú
 L = 100
 \end{itemize}
+
+A continuación vemos los resultados generados con las distintas instancias, todas las soluciones obtenidas fueron factibles:
 
 \subsection{Instancia con 500 trabajadores (db)}
 
@@ -715,7 +716,95 @@ Trabajador 500 -> Tarea:304 ,
 \subsection{Instancia con 75 trabajadores (db2)}
 El sistema tarda un aproxima de 1 min 20 a 1 min 50 para correr esta instancia con una semilla.
 
-Ejecutar el programa con 150 semillas en esta instancia tardó 2h 7m 33s
+Ejecutar el programa con 150 semillas en esta instancia tardó 3h 5m 31s
+
+Mejor Semilla: 150\\
+Mejor Costo: 2577.630596026299\\
+Mejor Asignación: 
+\begin{lstlisting}
+Trabajador 1 -> Tarea:62 , Tarea:133 , Tarea:138 , Tarea:190 , Tarea:193 , 
+Trabajador 2 -> Tarea:15 , Tarea:117 , 
+Trabajador 3 -> Tarea:12 , Tarea:46 , Tarea:137 , 
+Trabajador 4 -> Tarea:9 , Tarea:80 , Tarea:83 , Tarea:123 , Tarea:168 , 
+Trabajador 5 -> Tarea:14 , Tarea:198 , 
+Trabajador 6 -> Tarea:33 , Tarea:63 , Tarea:72 , 
+Trabajador 7 -> Tarea:53 , Tarea:107 , 
+Trabajador 8 -> Tarea:60 , Tarea:114 , 
+Trabajador 9 -> Tarea:156 , 
+Trabajador 10 -> Tarea:37 , Tarea:150 , 
+Trabajador 11 -> Tarea:41 , Tarea:77 , 
+Trabajador 12 -> Tarea:4 , Tarea:31 , Tarea:113 , Tarea:127 , 
+Trabajador 13 -> Tarea:96 , Tarea:158 , 
+Trabajador 14 -> Tarea:5 , Tarea:59 , Tarea:154 , Tarea:169 , 
+Trabajador 15 -> Tarea:112 , Tarea:197 , 
+Trabajador 16 -> Tarea:66 , 
+Trabajador 17 -> Tarea:13 , 
+Trabajador 18 -> Tarea:21 , Tarea:57 , Tarea:95 , Tarea:180 , 
+Trabajador 19 -> Tarea:176 , 
+Trabajador 20 -> 
+Trabajador 21 -> Tarea:34 , Tarea:35 , Tarea:102 , Tarea:196 , 
+Trabajador 22 -> Tarea:43 , Tarea:93 , 
+Trabajador 23 -> Tarea:48 , Tarea:68 , Tarea:122 , 
+Trabajador 24 -> Tarea:108 , Tarea:182 , 
+Trabajador 25 -> Tarea:25 , Tarea:121 , 
+Trabajador 26 -> Tarea:19 , 
+Trabajador 27 -> Tarea:27 , Tarea:29 , Tarea:38 , Tarea:81 , Tarea:89 , Tarea:111 , 
+Trabajador 28 -> Tarea:146 , Tarea:148 , 
+Trabajador 29 -> Tarea:8 , Tarea:159 , 
+Trabajador 30 -> Tarea:187 , 
+Trabajador 31 -> Tarea:170 , Tarea:178 , 
+Trabajador 32 -> Tarea:39 , Tarea:64 , Tarea:69 , Tarea:101 , Tarea:141 , 
+Trabajador 33 -> Tarea:6 , Tarea:56 , Tarea:74 , Tarea:181 , Tarea:195 , 
+Trabajador 34 -> Tarea:149 , Tarea:157 , 
+Trabajador 35 -> Tarea:26 , 
+Trabajador 36 -> Tarea:75 , 
+Trabajador 37 -> Tarea:55 , Tarea:119 , 
+Trabajador 38 -> Tarea:155 , 
+Trabajador 39 -> Tarea:16 , Tarea:91 , Tarea:103 , Tarea:109 , Tarea:144 , 
+Trabajador 40 -> Tarea:120 , Tarea:174 , 
+Trabajador 41 -> Tarea:30 , Tarea:136 , Tarea:188 , 
+Trabajador 42 -> Tarea:17 , Tarea:22 , Tarea:153 , Tarea:160 , Tarea:162 , Tarea:163 , 
+Trabajador 43 -> Tarea:2 , Tarea:84 , Tarea:105 , Tarea:134 , Tarea:161 , Tarea:185 , 
+Trabajador 44 -> Tarea:28 , Tarea:40 , Tarea:49 , Tarea:58 , Tarea:70 , Tarea:99 ,
+ Tarea:125 , Tarea:139 , 
+Trabajador 45 -> Tarea:47 , Tarea:164 , Tarea:165 , Tarea:175 , 
+Trabajador 46 -> Tarea:20 , Tarea:100 , 
+Trabajador 47 -> Tarea:61 , Tarea:71 , Tarea:76 , Tarea:179 , 
+Trabajador 48 -> Tarea:42 , Tarea:177 , Tarea:200 , 
+Trabajador 49 -> Tarea:118 , 
+Trabajador 50 -> Tarea:7 , Tarea:67 , Tarea:104 , Tarea:171 , Tarea:191 , 
+Trabajador 51 -> Tarea:45 , Tarea:86 , Tarea:124 , Tarea:173 , Tarea:186 , Tarea:194 , 
+Trabajador 52 -> Tarea:50 , Tarea:126 , Tarea:145 , 
+Trabajador 53 -> Tarea:87 , Tarea:130 , 
+Trabajador 54 -> Tarea:52 , 
+Trabajador 55 -> Tarea:90 , Tarea:142 , 
+Trabajador 56 -> Tarea:92 , Tarea:192 , 
+Trabajador 57 -> Tarea:106 , 
+Trabajador 58 -> Tarea:132 , Tarea:147 , 
+Trabajador 59 -> Tarea:23 , Tarea:51 , Tarea:129 , 
+Trabajador 60 -> Tarea:88 , Tarea:151 , Tarea:152 , 
+Trabajador 61 -> Tarea:78 , Tarea:167 , Tarea:183 , 
+Trabajador 62 -> Tarea:135 , 
+Trabajador 63 -> Tarea:10 , Tarea:94 , Tarea:116 , 
+Trabajador 64 -> Tarea:18 , Tarea:131 , 
+Trabajador 65 -> Tarea:79 , Tarea:115 , Tarea:184 , 
+Trabajador 66 -> Tarea:36 , Tarea:54 , Tarea:172 , 
+Trabajador 67 -> Tarea:166 , 
+Trabajador 68 -> Tarea:98 , 
+Trabajador 69 -> 
+Trabajador 70 -> Tarea:73 , Tarea:97 , Tarea:143 , 
+Trabajador 71 -> Tarea:128 , Tarea:189 , 
+Trabajador 72 -> Tarea:1 , Tarea:32 , 
+Trabajador 73 -> Tarea:24 , Tarea:44 , Tarea:85 , Tarea:110 , 
+Trabajador 74 -> Tarea:3 , Tarea:82 , Tarea:140 , Tarea:199 , 
+Trabajador 75 -> Tarea:11 , Tarea:65 , 
+\end{lstlisting}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{imgs/gap2.png}
+	\caption{Resultados de la instancia db2 con 150 semillas}
+\end{figure}
 
 \subsection{Instancia con 20 trabajadores (db3)}
 El sistema tarda un aproximado de 15 a 30 segundos para correr esta instancia con una semilla.
@@ -814,9 +903,9 @@ Trabajador 40 ->
 
 \section{Conclusiones y Comentarios}
 
-En conclusión, se hizo un proyecto que cumplía el objetivo y lo hizo de un forma bastante buena.
+En conclusión, se hizo un proyecto que cumplía el objetivo y lo hizo de un forma bastante buena. No se lograron alcanzar las soluciones óptimas del profesor, pero hubo una diferencia no tan grande.
 
-Tuve problemas para entender como funcionaba la heurística, tantos que en un punto decidí hacer todo con recocido simulado, pero después de leer varios artículos, en especial el de \cite{clever}, entendí una forma más sencilla de la heurística y la implementé como tal. A pesar de eso estoy satisfecha con mis resultados, mis mejores soluciones se acercaron bastantes a las del profesor y mi sistema se ejecuta en tiempo razonable.
+Tuve problemas para entender como funcionaba la heurística, tantos que en un punto decidí hacer todo con recocido simulado, pero después de leer varios artículos, en especial el de \cite{clever}, entendí una forma más sencilla de la heurística y la implementé como tal. A pesar de eso estoy satisfecha con mis resultados, mis mejores soluciones se acercaron bastante a las del profesor y mi sistema se ejecuta en tiempo razonable.
 
 En este proyecto estuve muchas veces en la encrucijada de si es mejor tener muchas soluciones buenas pero arriesgar a no encontrar la mejor posible o tener muchas soluciones malas con la esperanza de que la mejor pueda estar ahí. Ya que genero una solución inicial de forma greedy, estanco por así decirlo a mi sistema, debido a que va a encontrar una buena solución desde el inicio y es probable se atore en un mínimo local, la búsqueda tabú funciona justamente para ayudar con esto, pero ya que hice una implementación sencilla y para que mi sistema fuera igual de rápido que el de mis compañeros, mi heurística no recorre tanto espacio de búsqueda como para salir usualmente de estos mínimos locales. Probé ejecutar la heurística con una solución inicial aleatoria, pero no llegué a ninguna solución mejor a las que obtengo con la solución inicial greedy y tenía varias soluciones no factibles. Así que opté por mejor dar la solución inicial greedy y asegurar que la mayoría de las soluciones que se den sean factibles y bastante buenas, aunque no sean las mejores posibles.
 

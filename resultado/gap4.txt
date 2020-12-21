@@ -1,3 +1,4 @@
+Soluciones de las distintas semillas en el rango 0-300
 Semilla: 0, Costo: 2581.479780424739
 Semilla: 1, Costo: 2438.323055403285
 Semilla: 2, Costo: 2407.849814438165
