@@ -6,6 +6,14 @@ Se necesita tener gradle en versión 6 o mayor
 
 El reporte se encuentra [aquí](/reporte/reporte.pdf)
 
+### Construir proyecto
+
+Para construir el proyecto usar
+
+```bash
+$ gradle build
+```
+
 ### Generar documentación
 Para generar documentación usar  
 
