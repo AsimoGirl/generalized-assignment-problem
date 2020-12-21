@@ -1,6 +1,6 @@
 package mx.unam.ciencias.heuristicas.modelo
 /**
- * Declaramos nuestra clase trabajador que almacenará la información de los trabajadores de nuestro problema.
+ * Declaramos nuestra clase Trabajador que almacenará la información de los trabajadores de nuestro problema.
  *
  * @property id El identificador del trabajador.
  * @property nombre El nombre del trabajador.

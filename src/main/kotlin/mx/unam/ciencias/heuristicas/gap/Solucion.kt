@@ -3,26 +3,26 @@ import kotlin.random.Random
 
 
 /**
- * Clase Solucion
+ * Clase Solucion que guarda las posibles soluciones al problema
  *
- * @property grafica
- * @property asignaciones
+ * @property grafica La grafica del problema
+ * @property asignaciones Las asignaciones de tareas a trabajadores de la solución
  * @property random La semilla para generar valores aleatorios
  * @constructor Crea una solución
  */
 class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val random: Random) {
-    /** Gráfica que estaremos utilizando*/
+    /** Lista de trabajadores del problema*/
     private val trabajadores = grafica.trabajadores
-    /** Gráfica que estaremos utilizando*/
+    /** Lista de tareas del problema*/
     private val tareas = grafica.tareas
-    /** Gráfica que estaremos utilizando*/
+    /** Boolean si la solución es factible o no*/
     val factible = grafica.esFactible(asignaciones)
-    /** Gráfica que estaremos utilizando*/
+    /** Costo de la solución*/
     val costo = grafica.calculaCosto(asignaciones)
 
     /**
      * Función que obtiene el vecino de una solución, intercambiamos las tareas de dos trabajadores
-     * @return Regresa el par de índices del nuevo trabajador con su tarea
+     * @return Regresa una nueva solución, con los indices intercambiados
      * */
     fun generaVecinoSwap(): Solucion {
         var tareaAleatoria1 = (asignaciones.indices).random(random)
@@ -39,9 +39,9 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
     }
 
     /**
-     * Función que cambia la forma en que se muestra la ruta de la solución
-     * @return Una string que representa la solución
-     */
+     * Función que obtiene el vecino de una solución, asignando una tarea a un nuevo trabajador de forma aleatoria
+     * @return Regresa una nueva solución, con las asignaciones modificadas
+     * */
     fun generaVecinoShift(): Solucion {
         val tareaAleatoria = (asignaciones.indices).random(random)
         val idviejoTrabajador = asignaciones[tareaAleatoria]
@@ -55,7 +55,7 @@ class Solucion(val grafica: Grafica, var asignaciones: Array<Int>, private val r
     }
 
     /**
-     * Función que cambia la forma en que se muestra la ruta de la solución
+     * Función que muestra la solución
      * @return Una string que representa la solución
      */
     override fun toString(): String {

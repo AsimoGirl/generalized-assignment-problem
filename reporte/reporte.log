@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  20 DEC 2020 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.3)  20 DEC 2020 16:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -871,27 +871,20 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 33.
-
-(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [1
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 63.
+ [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 71.
-<imgs/estructura.png, id=59, 217.5628pt x 215.30438pt>
+<imgs/estructura.png, id=53, 217.5628pt x 215.30438pt>
 File: imgs/estructura.png Graphic file (type png)
 <use imgs/estructura.png>
-Package pdftex.def Info: imgs/estructura.png  used on input line 100.
+Package pdftex.def Info: imgs/estructura.png  used on input line 92.
 (pdftex.def)             Requested size: 174.05048pt x 172.24373pt.
-
-Underfull \vbox (badness 4595) has occurred while \output is active []
-
- [2]
-[3 <./imgs/estructura.png (PNG copy)>] [4]
-Overfull \hbox (21.91185pt too wide) in paragraph at lines 187--188
+ [2 <./imgs/estructura.png (PNG copy)>]
+[3]
+Overfull \hbox (21.91185pt too wide) in paragraph at lines 179--180
 []$\OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m
 /n/10 5\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 7
@@ -909,7 +902,7 @@ m/n/10 653\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 654\OML/cmm/m/it/10 ; \OT1/cmr/m/n
  []
 
 
-Overfull \hbox (51.03894pt too wide) in paragraph at lines 199--200
+Overfull \hbox (51.03894pt too wide) in paragraph at lines 191--192
 []\T1/ptm/m/n/10 Ruta: $\OT1/cmr/m/n/10 [980\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 
 327\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 871\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 331
 \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 164\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 984\OM
@@ -927,7 +920,7 @@ cmm/m/it/10 ; \OT1/cmr/m/n/10 656\OML/cmm/m/it/10 ; []
  []
 
 
-Overfull \hbox (53.57834pt too wide) in paragraph at lines 211--212
+Overfull \hbox (53.57834pt too wide) in paragraph at lines 203--204
 []$\OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m
 /n/10 5\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 7
@@ -948,7 +941,7 @@ m/m/it/10 ; \OT1/cmr/m/n/10 165\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 166\OML/cmm/m
  []
 
 
-Overfull \hbox (55.24538pt too wide) in paragraph at lines 211--212
+Overfull \hbox (55.24538pt too wide) in paragraph at lines 203--204
 \OT1/cmr/m/n/10 176\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 179\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 181\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 182\OML/cmm/m/it/10 ; \OT1/c
 mr/m/n/10 183\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 184\OML/cmm/m/it/10 ; \OT1/cmr/
@@ -966,7 +959,7 @@ it/10 ; \OT1/cmr/m/n/10 340\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 343\OML/cmm/m/it/
  []
 
 
-Overfull \hbox (55.24538pt too wide) in paragraph at lines 211--212
+Overfull \hbox (55.24538pt too wide) in paragraph at lines 203--204
 \OT1/cmr/m/n/10 349\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 350\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 351\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 352\OML/cmm/m/it/10 ; \OT1/c
 mr/m/n/10 353\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 444\OML/cmm/m/it/10 ; \OT1/cmr/
@@ -984,7 +977,7 @@ it/10 ; \OT1/cmr/m/n/10 507\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 508\OML/cmm/m/it/
  []
 
 
-Overfull \hbox (55.24538pt too wide) in paragraph at lines 211--212
+Overfull \hbox (55.24538pt too wide) in paragraph at lines 203--204
 \OT1/cmr/m/n/10 520\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 652\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 653\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 654\OML/cmm/m/it/10 ; \OT1/c
 mr/m/n/10 655\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 656\OML/cmm/m/it/10 ; \OT1/cmr/
@@ -1002,7 +995,7 @@ it/10 ; \OT1/cmr/m/n/10 676\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 678\OML/cmm/m/it/
  []
 
 
-Overfull \hbox (55.24538pt too wide) in paragraph at lines 211--212
+Overfull \hbox (55.24538pt too wide) in paragraph at lines 203--204
 \OT1/cmr/m/n/10 819\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 820\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 821\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 822\OML/cmm/m/it/10 ; \OT1/c
 mr/m/n/10 823\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 825\OML/cmm/m/it/10 ; \OT1/cmr/
@@ -1019,8 +1012,8 @@ it/10 ; \OT1/cmr/m/n/10 986\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 988\OML/cmm/m/it/
 ] 
  []
 
-
-Overfull \hbox (41.03891pt too wide) in paragraph at lines 223--225
+[4]
+Overfull \hbox (41.03891pt too wide) in paragraph at lines 215--217
 []\T1/ptm/m/n/10 Ruta: $\OT1/cmr/m/n/10 [353\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 
 990\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 27\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 333\
 OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 981\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/c
@@ -1038,7 +1031,7 @@ cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; []
  []
 
 
-Overfull \hbox (39.68973pt too wide) in paragraph at lines 223--225
+Overfull \hbox (39.68973pt too wide) in paragraph at lines 215--217
 \OT1/cmr/m/n/10 656\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 667\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 184\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 815\OML/cmm/m/it/10 ; \OT1/c
 mr/m/n/10 9\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 832\OML/cmm/m/it/10 ; \OT1/cmr/m/
@@ -1056,7 +1049,7 @@ mm/m/it/10 ; \OT1/cmr/m/n/10 19\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 839\OML/cmm/m
  []
 
 
-Overfull \hbox (45.24535pt too wide) in paragraph at lines 223--225
+Overfull \hbox (45.24535pt too wide) in paragraph at lines 215--217
 \OT1/cmr/m/n/10 816\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 187\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 982\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 14\OML/cmm/m/it/10 ; \OT1/cm
 r/m/n/10 181\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 345\OML/cmm/m/it/10 ; \OT1/cmr/m
@@ -1074,7 +1067,7 @@ m/m/it/10 ; \OT1/cmr/m/n/10 347\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 499\OML/cmm/m
  []
 
 
-Overfull \hbox (49.68976pt too wide) in paragraph at lines 223--225
+Overfull \hbox (49.68976pt too wide) in paragraph at lines 215--217
 \OT1/cmr/m/n/10 662\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 ; \OT1/
 cmr/m/n/10 999\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 674\OML/cmm/m/it/10 ; \OT1/cmr
 /m/n/10 871\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 343\OML/cmm/m/it/10 ; \OT1/cmr/m/
@@ -1092,7 +1085,7 @@ mr/m/n/10 828\OML/cmm/m/it/10 ; []
  []
 
 
-Overfull \hbox (50.24536pt too wide) in paragraph at lines 223--225
+Overfull \hbox (50.24536pt too wide) in paragraph at lines 215--217
 \OT1/cmr/m/n/10 12\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1038\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 502\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 340\OML/cmm/m/it/10 ; \OT1/c
 mr/m/n/10 183\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 75\OML/cmm/m/it/10 ; \OT1/cmr/m
@@ -1109,46 +1102,41 @@ t/10 ; \OT1/cmr/m/n/10 822\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1001\OML/cmm/m/it/
  
  []
 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./reporte.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
 Package rerunfilecheck Info: File `reporte.out' has not changed.
 (rerunfilecheck)             Checksum: 184DE4D31F3E10E3D8D8510F7A9B4CE0;517.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 9952 strings out of 492982
- 140069 string characters out of 6134897
+ 9918 strings out of 492982
+ 139622 string characters out of 6134897
  247643 words of memory out of 5000000
- 13328 multiletter control sequences out of 15000+600000
- 46500 words of font info for 67 fonts, out of 8000000 for 9000
+ 13312 multiletter control sequences out of 15000+600000
+ 33411 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,45p,1183b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,45p,1027b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on reporte.pdf (6 pages, 167632 bytes).
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on reporte.pdf (5 pages, 131601 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  70 words of extra memory for PDF output out of 10000 (max. 10000000)
 

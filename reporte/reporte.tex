@@ -25,53 +25,45 @@
 
 \section{Introducción}
 
-El objetivo de este proyecto es implementar un sistema para resolver instancias del \textbf{Problema del Agente Viajero}\footnote{Del inglés \textit{Traveling Salesman Problem} (TSP)}, el cual dado un subconjunto de ciudades en un mapa, busca el camino más corto que pasa por todas ellas si es que existe.
-Para lograr este objetivo, utilizamos la heurística de \textbf{Recocido Simulado} \footnote{Del inglés \textit{Simulated Annealing} (SA)} con la variante de \textbf{Aceptación Por Umbrales} \footnote{Del inglés \textit{Threshold Accepting} (TA)}.
+El problema del que se hablará en este reporte es el de \textbf{GAP}. Consiste en lo
+siguiente:
 
-Sea $S \subset V$ una instancia de TSP que se quiere resolver.
-Para la resolución del TSP, primero se construyó una gráfica ponderada $G=(V,E)$ con las ciudades y sus respectivas conexiones (distancias entre las ciudades).
-Esta gráfica no es completa, pero para facilitar la optimización la consideramos completa $G_s =(V_s, E_s)$, donde $V_s = S$ y $E_s= \{ (u,v) | u,v \in S \text{ y } u \not= v \}$ y la definimos con una función de peso aumentada para las aristas $w_s : E_s \to \mathds{R}^+$ definida como:
-\[
-  w_s(u,v) =
-    \begin{cases}
-      w(u,v)                   & \text{si }(u,v) \in E\\
-      d(u,v) \times \max_d (S) &\text{en otro caso}\\
-    \end{cases}
-\]
+Dadas $n$ tareas y $m$ trabajadores o agentes, se quieren asignar todas las tareas
+a los trabajadores. Cada trabajador tiene cierta energía o $capacidad$ que se va
+gastando conforme se le asignan tareas, cada tarea gasta un valor de $capacidad$
+dependiendo del trabajador al que se asigne, esto se puede ver como cuanta "dificultad" le puede costar al trabajador realizarla.
+Además cada tarea tiene un $costo$ que depende del trabajador que la vaya realizar.
 
-donde $d(u,v)$ es la distancia natural entre dos vértices $u$ y $v$; y $max_d (S)$ será la \underline{distancia máxima} que existe entre los elementos de $S$ que están conectados en $G$.
+La $capacidad$ total del trabajador, la capacidad que gasta una tarea y el $costo$ 
+se pueden ver como las siguientes funciones:
+\[capacidadTotal=b(w)\]
+\[capacidad=a(t,w)\] 
+\[costo=\sum_{t=1}^{n}\sum_{w=1}^{m}c(t,w)\times x(t,w)\]
+Donde $w$ es un trabajador, $t$ es una tarea y $x(t,w)$ es la función que 
+representa si la tarea $t$ está asignada al trabajador $w$, es decir:
+\[x(t,w)=
+\begin{cases}
+\text{1}&\quad\text{si $w$ realiza la tarea $t$}\\
+\text{0}&\quad\text{e.o.c}
+\end{cases}\]
 
-La \underline{distancia natural} se utiliza para calcular la distancia natural entre dos elementos
-de $S$ para de esta manera tener nuestra gráfica completa, se utilizarán las coordenadas de las
-ciudades correspondientes. Su fórmula está definida por
-\[
-    d(u,v) = R \times C
-\]
-donde $R$ es el radio de la Tierra y $C$ está definida como $C = 2 \times \arctan(\sqrt{A},\sqrt{1-A})$. Con $A = \sin(\frac{lat(v)-lat(u)}{2})^2 + \cos(lat(u)) \times \cos(lat(v)) \times \sin(\frac{lon(v)-lon(u)}{2})^2$.
-
-Esta definición se da de esta forma par que el sistema descarte las aristas que no están en $G$ para encontrar soluciones factibles más fácilmente.
-
-Una \underline{solución de TSP} dada una instancia $S$, es cualquier permutación de los elementos de $S$ y se puede asegurar que estas soluciones son válidas para $G_s$. Dándonos así, dos tipos de permutaciones: las factibles y las no factibles. Decimos que es factible si y sólo si las aristas entre dos elementos consecutivos de la permutación existen en $E$. Si al menos una arista no existe, decimos que no es factible.
-
-
-La optimización de TSP necesitará una \underline{función de costo} que evaluará ``qué tan buena (o no) es una solución'' y así se podrá decidir cuál es la mejor usando el criterio de comparación donde la evaluación con menor valor es la mejor. Para esto se va a normalizar la función de costo, pero para esto se necesitará un normalizador.
-
-\underline{El normalizador}, como su nombre lo dice, normaliza la función de costo y nos dirá si una solución $S$ es factible si esta evaluada entre 0 y 1, y que una solución no factible se evalúe con un valor mayor que 1. Sea $L'$ los primeros $|S|-1$ elementos. La función se define como:
-\[
-\mathcal{N}(S) = \sum_{d \in L'}d
-\]
-
-La \underline{función de costo}, $f$ de una permutación $P = v_{\rho(1)}, \ldots, v_{\rho(k)}$ de los elementos de $S$ está definida como:
-\[
-    f(P) = \frac{\sum_{i=2}^{k} w_s(v_{\rho(i-1)}, v_{\rho(i)})}{\mathcal{N}(S)}
-\]
-
-Además de la función de costo, la optimización usa búsqueda local donde se deben conocer los $\underline{vecinos}$ de la solución de TSP. Dos soluciones son vecinas si intercambiando dos elementos de la primera se obtiene la segunda.
+Lo que busca optimizar el problema GAP es la función de costo.
+Además, una solución es factible si y sólo si se cumplen las siguientes 
+condiciones:
+\begin{enumerate}
+	\item Toda tarea debe estar asignada a algún trabajador.
+	\[\forall t \exists w (x(t,w)=1)\]
+	\item Ninguna tarea debe estar asignada al mismo tiempo a dos o más 
+	trabajadores.
+	\[\forall t \neg \exists w_1,w_2 (x(t,w1)=1 \;\wedge \; x(t,w_2)=1)\]
+	\item Un trabajador no debe superar su $capacidadTotal$.
+	\[\forall w \left(\sum_{t=1}^{n}a(t,w)\times x(t,w) \; \leq b(j)\right)\]
+\end{enumerate}
 
 \subsection{Búsqueda Tabú \emph{(Tabu Search)}}
 Ahora hablaremos de la heurística: La heurística que se uso fue el \underline{recocido simulado}, la cual tiene su origen en la metalurgia, en el temple de metales. La idea de este es que si un metal se calienta a altas temperaturas y se le baja la temperatura abruptamente, el metal queda muy frágil, por otro lado si se baja la temperatura gradualmente, el metal se vuelve cada vez mas resistente. En pocas palabras, si se baja la temperatura lentamente, las propiedades del metal son mejores.
 
-Viéndolo formalmente, dado un problema $\mathscr{P}$ de optimización y clasificado como NP-duro, sea $S$ el conjunto de posibles soluciones a una instancia de $\mathscr{P}$. Se supondrá que se tiene una función $f: S \to \mathds{R}^+$, (función objetivo), tal que $0 \leq f(s) \leq \infty$ para cualquier $s \in S$. Dadas $s,s'$ si $f(s) < f(s')$, entonces se considerará a la solución $s$ mejor que $s'$. En el proyecto se usará una variación del recocido simulado llamado aceptación por umbrales. La idea central de \underline{la aceptación por umbrales}, es que dada una temperatura inicial $T \in \mathds{R}^+$ y una solución inicial (obtenida de alguna manera),se busca de forma aleatoria una solución vecina $s'$ tal que $f(s') \leq f(s) + T$, y entonces actualizar $s$ para que sea $s'$, en este caso diremos que la solución $s'$ es \emph{aceptada}. Se continúa de esta manera mientras la temperatura $T$ es disminuida paulatinamente siguiendo una serie de condiciones: el proceso termina cuando $T < \epsilon$ (cuando se han generado un determinado número de soluciones aceptadas) o cuando otra serie de condiciones es satisfecha.
+En este proyecto se uso la versión simplificada 
 
 \section{Tecnologías usadas en el programa}
 \begin{itemize}

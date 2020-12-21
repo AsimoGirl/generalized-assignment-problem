@@ -76,6 +76,7 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
 
     /**
      * Función que calcula el costo total de una asignación de tareas
+     * @param asignaciones Las asignaciones de las tareas
      * @return El costo de la asignación
      */
     fun calculaCosto(asignaciones: Array<Int>):Double{
@@ -89,8 +90,10 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
     }
 
     /**
-     * Función que regresa el costo de la mejor solución del sistema
-     * @return El costo de la mejor solución del sistema
+     * Función que revisa si el trabajador puede realizar todas las tareas que le fueron asignadas
+     * @param id_trabajador El id del trabajador que se revisará su capacidad
+     * @param asignaciones Las asignaciones de las tareas
+     * @return Un booleano que representa si el trabajado puede realizar las tareas o no
      */
     fun revisaCapacidad(id_trabajador: Int, asignaciones: Array<Int>): Boolean {
         var capacidad = 0.0
@@ -104,8 +107,15 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
     }
 
     /**
-     * Función que regresa el costo de la mejor solución del sistema
-     * @return El costo de la mejor solución del sistema
+     * Función que revisa si una solución es factible o no
+     * Recordemos que para que sea factible debe cumplir siguiente:
+     * 1. Ningún trabajador supera su capacidad.
+     * 2. Todas las tareas son asignadas
+     * 3. Cada tarea se asigna a un sólo trabajador
+     * EL punto 2 y 3 siempre se cumplen debido a como se realizan las asignaciones, así que solo
+     * revisamos el punto
+     * @param asignaciones Las asignaciones de las tareas
+     * @return Un booleano que representa si la asignacion de tareas da una solucion factible o no
      */
     fun esFactible(asignaciones: Array<Int>): Boolean{
         for(element in asignaciones){
@@ -119,8 +129,9 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
     }
 
     /**
-     * Función que regresa el costo de la mejor solución del sistema
-     * @return El costo de la mejor solución del sistema
+     * Función que regresa una lista con los trabajadores que pueden realizar una tarea ordenando por costo
+     * @param id_tarea El id de la tarea cuyos mejores trabajadores se buscarán
+     * @return La lista de los mejores posibles trabajadores
      */
     fun calculaMejorTrabajador(id_tarea:Int): Array<Int>{
         val mejoresTrabajadores = ArrayList<Pair<Int, Double>>()
@@ -138,40 +149,49 @@ class Grafica(val trabajadores: ArrayList<Trabajador>, val tareas: ArrayList<Tar
     }
 
     /**
-     * Función que regresa el costo de la mejor solución del sistema
-     * @return El costo de la mejor solución del sistema
+     * Función que genera la asignación para la solución inicial de forma voraz
+     * @return La asignacion inicial
      */
     fun generaAsignacionInicial(): Array<Int>{
         val asignacionInicial = Array<Int>(numTareas){0}
         var esAdmisible = false
         val tareasIds = Array<Int>(numTareas){it}
+        //Mientras no haya una asignación factible, iteramos 1000 veces
         for(i in 0 until 1000){
             esAdmisible = true
+            //Creamos un arreglo para ir guardando la capacidad usada por cada trabajador
             val caps = Array(numTrabajadores){0.0}
             //Escogemos tareas aleatoriamente
             Collections.shuffle(tareasIds.asList())
+            //Iteramos las tareas
             for(a in tareasIds.indices){
                 val tarea = tareasIds[a]
                 var minTrabajador = -1
+                //Buscamos a los trabajadores que costen menos para realizar la tarea
                 val mejoresCostos = calculaMejorTrabajador(tarea)
                 for(b in mejoresCostos){
+                    //Revisamos si alguno de los trabajadores aún tiene capacidad disponible para realizar esta tarea
                     if (caps[b] + tablaCapacidades[b][tarea] <= tablaTrabajadoresCap[b]){
                         minTrabajador = b
                         break
                     }
                 }
+                //Si ningún trabajador puede realizar la tarea, decimos que no es admisible esta asignación
                 if (minTrabajador == -1){
                     esAdmisible = false
                     break
                 }
+                // Si el trabajador puede realizar la tarea, se la asignamos y actualizamos su capacidad disponible
                 else{
                     asignacionInicial[tarea] = minTrabajador
                     caps[minTrabajador] = caps[minTrabajador] + tablaCapacidades[minTrabajador][tarea]
                 }
             }
+            // Si encontramos la asignación admisible, terminamos la iteración
             if (esAdmisible)
                 break
         }
+        // Si no encontramos una asignación admisible, damos una aleatoria
         if(!esAdmisible){
             for(i in 0 until numTareas){
                 asignacionInicial[i] = (0 until numTrabajadores).random()

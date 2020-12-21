@@ -19,7 +19,7 @@ class DAO() {
 
     /**
      * Función que obtiene la información de todas los trabajadores
-     * @return Una lista de todos los objetos trabajador
+     * @return Una lista de todos los objetos trabajador con la información de la base de datos
      */
     fun getTrabajadores(): ArrayList<Trabajador> {
         val connection: Connection?
@@ -49,8 +49,8 @@ class DAO() {
     }
 
     /**
-     * Función que obtiene la información de todas las conexiones entre las ciudades
-     * @return Una lista de todos los objetos conexion de las ciudades
+     * Función que obtiene la información de todas las tareas
+     * @return Una lista de todos los objetos tarea con la información de la base de datos
      */
     fun getTareas(): ArrayList<Tarea> {
         val tareas = arrayListOf<Tarea>()
@@ -76,6 +76,10 @@ class DAO() {
         return tareas
     }
 
+    /**
+     * Función que obtiene la información de todos los costos entre trabajadores y tareas
+     * @return Una lista de la tripleta que tiene los indices del trbajador y tarea, además de su costo
+     */
     fun getCostos(): ArrayList<Pair <Pair<Int, Int> , Double>>{
         val costos = arrayListOf<Pair <Pair<Int, Int> , Double>>()
         val connection: Connection?
@@ -103,6 +107,10 @@ class DAO() {
         return costos
     }
 
+    /**
+     * Función que obtiene la información de todas las capacidades necesarias entre trabajadores y tareas
+     * @return Una lista de la tripleta que tiene los indices del trbajador y tarea, además de su capacidad necesaria
+     */
     fun getCapacidades(): ArrayList<Pair <Pair<Int, Int> , Double>>{
         val capacidades = arrayListOf<Pair <Pair<Int, Int> , Double>>()
         val connection: Connection?
