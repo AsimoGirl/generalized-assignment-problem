@@ -1,40 +1,34 @@
-# Problema-de-la-asignacion
-Segundo proyecto de heurísticas y combinación
+# Generalized Assignment Problem
+The comments are in Spanish as they were used for educational reasons.
 
-Se necesita tener gradle en versión 6 o mayor
-### Reporte
+You need to have gradle version 6 or higher
 
-El reporte se encuentra [aquí](/reporte/reporte.pdf)
-
-### Generar documentación
-Para generar documentación usar  
+### Generate documentation
+To generate documentation use
 
 ```bash
 $ ./gradlew dokkaHtml
 ```
-y dentro de build/dokka aparecerá la documentación
+and within build/dokka the documentation will appear
 
-### Ejecución
-Se le tendrá que pasar al programa el inicio de un rango de semillas y el final de ellas. 
-El programa también funciona con una sola semilla.
-En caso que se quiera probar un rango de semillas, aparecerá un txt llamado resultados.txt dentro de una carpeta resultados, el cual tendrá la evaluacion de todas las semillas y dará la mejor solución entre ellas.
+### Execution
+The beginning of a range of seeds and the end of them will have to be passed to the program.
+The program also works with a single seed.
+If you want to test a range of seeds, a txt called results.txt will appear inside a results folder, which will have the evaluation of all the seeds and will give the best solution among them.
 
-El programa tiene ya incrustada la base de datos a usar, por lo que si se desea usar una base de datos diferente, agregarla a la carpeta resources y cambiar el nombre de la DB_URL dentro del archivo [DAO](src/main/kotlin/mx/unam/ciencias/heuristicas/DAO.kt)
+The program already has the database to use embedded, so if you want to use a different database, add it to the resources folder and change the name of the DB_URL within the [DAO] file (src/main/kotlin/ mx/unam/ciencias/heuristicas/DAO.kt)
 
-El programa se ejecuta de la siguiente manera dentro del directorio actual:
+The program runs as follows within the current directory:
 
 ```bash
 $ ./gradlew run -PseedS=Int -PseedF=Int
 ```
 
-Ejemplo de ejecución si se quieren probar un rango de semillas:
+Example of execution if you want to test a range of seeds:
 ```bash
 $ ./gradlew run -PseedS=20 -PseedF=25
 ```
-Ejemplo de ejecución si solo se quiere una semilla:
+Example of execution if you only want one seed:
 ```bash
 $ ./gradlew run -PseedS=20 -PseedF=20
 ```
-
-
-
