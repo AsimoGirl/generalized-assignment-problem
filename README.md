@@ -1,5 +1,5 @@
 # Generalized Assignment Problem
-The comments are in Spanish as they were used for educational reasons.
+The comments and contents of the project are in Spanish as they were used for educational purposes.
 
 You need to have gradle version 6 or higher
 
